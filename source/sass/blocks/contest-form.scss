@@ -1,0 +1,49 @@
+.contest-form {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.contest-form__wrapper {
+  padding-top: 54px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contest-form__intro {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #283645;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+
+@media (min-width: 660px) {
+  .contest-form__wrapper {
+    width: 660px;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .contest-form__intro {
+    font-size: 18px;
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+}
+
+@media (min-width: 960px) {
+  .contest-form__wrapper {
+    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .contest-form__intro {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}

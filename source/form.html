@@ -43,7 +43,96 @@
     </div>
   </header>
   <main class="page-main">
-
+    <h1 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <form class="contest-form" action="">
+      <div class="contest-form__wrapper">
+        <p class="contest-form__intro">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста,
+          заполните форму ниже:
+        </p>
+        <fieldset class="contest-form__user-data">
+          <legend></legend>
+          <p class="custom-text-field">
+            <label for="user-surname">Фамилия:</label>
+            <input type="text" id="user-surname" name="user-surname" placeholder="Укажите фамилию *" required>
+          </p>
+          <p class="custom-text-field">
+            <label for="user-name">Имя:</label>
+            <input type="text" id="user-name" name="user-name" placeholder="Введите ваше имя *" required>
+          </p>
+          <p class="custom-text-field">
+            <label for="user-middle-name">Отчество:</label>
+            <input type="text" id="user-middle-name" name="user-middle-name" placeholder="Ну и отчество тоже">
+          </p>
+        </fieldset>
+        <fieldset class="contest-form__achievement">
+          <legend>Ваши безбашенные достижения в путешествии</legend>
+          <ul>
+            <li class="custom-checkbox">
+              <input type="checkbox" name="journey-achievement" id="" checked>
+              <label for="">Сделал селфи с акулой</label>
+            </li>
+            <li class="custom-checkbox">
+              <input type="checkbox" name="journey-achievement" id="" checked>
+              <label for="">Обгорел на пляже</label>
+            </li>
+            <li class="custom-checkbox">
+              <input type="checkbox" name="journey-achievement" id="">
+              <label for="">Видел Чака Норриса</label>
+            </li>
+            <li class="custom-checkbox">
+              <input type="checkbox" name="journey-achievement" id="">
+              <label for="">Накупил сувениров</label>
+            </li>
+            <li class="custom-checkbox">
+              <input type="checkbox" name="journey-achievement" id="" checked>
+              <label for="">Удержал башню</label>
+            </li>
+            <li class="custom-checkbox">
+              <input type="checkbox" name="journey-achievement" id="">
+              <label for="">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="contest-form__contacts">
+          <legend></legend>
+          <p class="custom-text-field">
+            <label for="user-phone">Номер телефона</label>
+            <input type="tel" id="user-phone" name="user-phone" placeholder="Номер, пожалуйста">
+          </p>
+          <p class="custom-text-field">
+            <label for="user-email">адрес почты</label>
+            <input type="email" id="user-email" name="user-email" placeholder="Введите почту *" required>
+          </p>
+        </fieldset>
+        <fieldset class="contest-form__app">
+          <legend>С каким приложением путешествовали?</legend>
+          <ul>
+            <li class="custom-radio">
+              <input type="radio" name="user-app" id="user-app-ios" checked>
+              <label for="user-app-ios">Pink для iOS</label>
+            </li>
+            <li class="custom-radio">
+              <input type="radio" name="user-app" id="user-app-android">
+              <label for="user-app-android">Pink на Android</label>
+            </li>
+            <li class="custom-radio">
+              <input type="radio" name="user-app" id="user-app-windows-phone">
+              <label for="user-app-windows-phone">Windows Phone</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="contest-form__comment">
+          <legend>Опишите свои эмоции</legend>
+          <textarea class="custom-textarea" name="user-review" id="user-comment" cols="30" rows="10"
+            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+        <p>
+          <button type="submit">Отправить форму</button>
+          <small>* — обязательные поля</small>
+        </p>
+      </div>
+    </form>
   </main>
   <footer class="page-footer">
     <a href="index.html" class="page-footer__logo">
