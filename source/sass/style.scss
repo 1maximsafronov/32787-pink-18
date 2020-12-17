@@ -1,3 +1,4 @@
+@import "normalize";
 @import "./fonts.scss";
 @import "./blocks/visually-hidden.scss";
 @import "./blocks/page-header.scss";
@@ -6,12 +7,14 @@
 @import "./blocks/contest-form.scss";
 
 body {
+  min-width: 320px;
+
+  background-image: url("../img/back-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
-  min-width: 320px;
-  background-image: url("../img/back-desktop.jpg");
-  background-position: 50% 0;
-  background-repeat: no-repeat;
 }
 
 img {
