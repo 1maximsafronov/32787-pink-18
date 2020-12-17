@@ -1,22 +1,11 @@
 @import "normalize";
 @import "./fonts.scss";
+@import "./blocks/global.scss";
 @import "./blocks/visually-hidden.scss";
 @import "./blocks/page-header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/site-nav.scss";
 @import "./blocks/contest-form.scss";
-
-body {
-  min-width: 320px;
-
-  background-image: url("../img/back-desktop.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-}
-
-img {
-  max-width: 100%;
-}
+@import "./blocks/reviews.scss";
+@import "./blocks/review.scss";
+@import "./blocks/slider.scss";

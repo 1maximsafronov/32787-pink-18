@@ -1,0 +1,27 @@
+html {
+  box-sizing: border-box;
+  min-width: 320px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+
+  color: #283645;
+  background-color: #ffffff;
+  background-image: url("../img/back-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+}
