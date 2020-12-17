@@ -186,18 +186,49 @@
       </ul>
     </section>
     <section class="upload">
-      <h2 class="upload__title">Затмите их всех!
-        Выкладывайте все, что накопилось в телефоне!</h2>
-      <form class="upload__form" action="">
-        <div class="upload__preview">
-          <picture>
-            <source srcset="https://picsum.photos/300/400 1x" media="(min-width: 940px)">
-            <source srcset="https://picsum.photos/300/400 1x" media="(min-width: 660px)">
-            <img class="upload__preview-image" src="https://picsum.photos/280/374" alt="">
-          </picture>
-        </div>
-        <div class="upload__filters"></div>
-      </form>
+      <div class="upload__wrapper">
+        <h2 class="upload__title">Затмите их всех! <br>
+          Выкладывайте все, что накопилось в телефоне!</h2>
+        <form class="upload__form" action="">
+          <div class="upload__preview">
+            <picture>
+              <source srcset="https://picsum.photos/300/400 1x" media="(min-width: 940px)">
+              <source srcset="https://picsum.photos/300/400 1x" media="(min-width: 660px)">
+              <img class="upload__preview-image" src="https://picsum.photos/280/374" alt="">
+            </picture>
+          </div>
+          <div class="upload__filters filters">
+
+            <ul class="filters__list">
+              <li class="filters__item">
+                <div class="range-slide">
+                  <div class="range-slide__bar">
+                    <button class="range-slide__toggle"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="filters__item">
+                <div class="range-slide">
+                  <div class="range-slide__bar">
+                    <button class="range-slide__toggle"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="filters__item">
+                <div class="range-slide">
+                  <div class="range-slide__bar">
+                    <button class="range-slide__toggle"></button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="upload__buttons">
+              <button class="upload__button upload__button--send">Запостить</button>
+              <button class="upload__button upload__button--cancel">Отмена</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="page-footer">

@@ -1,0 +1,38 @@
+.range-slide {
+  display: block;
+
+  padding: 0;
+}
+
+.range-slide__bar {
+  position: relative;
+
+  height: 2px;
+
+  background-color: #283645;
+}
+
+.range-slide__toggle {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+
+  display: block;
+
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  padding: 0;
+
+  cursor: pointer;
+  transform: translateY(-50%);
+
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+
+  &:hover,
+  &:focus {
+    background-color: #d22856;
+  }
+}
