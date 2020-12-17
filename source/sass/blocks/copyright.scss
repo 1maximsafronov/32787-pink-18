@@ -1,0 +1,44 @@
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+.copyright__text {
+  margin: 0;
+  margin-right: 15px;
+
+  color: #283645;
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.copyright__logo {
+  display: block;
+
+  &:hover,
+  &:focus {
+    .copyright__image {
+      fill: #283645;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__image {
+  display: block;
+
+  width: 27px;
+  height: 34px;
+
+  fill: #d22856;
+}
+
+@media (min-width: 960px) {
+  .copyright__text {
+    font-size: 18px;
+  }
+}

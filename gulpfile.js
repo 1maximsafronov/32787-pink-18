@@ -11,6 +11,7 @@ const include = require("posthtml-include");
 const sourcemap = require("gulp-sourcemaps");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
+const svgstore = require("gulp-svgstore");
 
 const copy = () => {
   return gulp.src([
@@ -63,6 +64,15 @@ const html = () => {
 
 exports.html = html;
 
+const sprite = () => {
+  return gulp.src("source/img/icon-*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+}
+
 // Server
 
 const server = (done) => {
@@ -86,6 +96,6 @@ const watcher = () => {
   gulp.watch("source/*.html").on("change", gulp.series("html", sync.reload));
 }
 
-const build = gulp.series(clean, copy, styles, html);
+const build = gulp.series(clean, copy, styles, sprite, html);
 exports.build = build;
 exports.default = gulp.series(build, server, watcher);
