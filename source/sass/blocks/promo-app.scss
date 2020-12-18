@@ -39,6 +39,17 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
+
+  &:hover,
+  &:focus {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(#d22856, 0.3);
+    background-color: #ffffff;
+  }
 }
 
 .promo-app__download-list {
