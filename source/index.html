@@ -13,14 +13,14 @@
     <include src="build/img/sprite.svg"></include>
   </div>
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <nav class="main-nav">
+    <nav class="main-nav main-nav--closed">
+      <div class="main-nav__container">
         <div class="main-nav__wrapper">
           <a href="index.html" class="page-header__logo">
             <picture>
-              <source srcset="img/logo.svg 1x" media="(min-width: 940px)">
-              <source srcset="img/logo.svg 1x" media="(min-width: 660px)">
-              <img class="page-header__logo-image" src="img/logo.svg" alt="">
+              <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 960px)">
+              <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
+              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="">
             </picture>
           </a>
           <button class="main-nav__toggle" type="button">
@@ -28,8 +28,8 @@
           </button>
         </div>
         <ul class="main-nav__list site-nav">
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html">Главная</a>
+          <li class="site-nav__item site-nav__item--active">
+            <a class="site-nav__link">Главная</a>
           </li>
           <li class="site-nav__item">
             <a class="site-nav__link" href="photo.html">Фотографии</a>
@@ -41,13 +41,11 @@
             <a class="site-nav__link" href="#">HTML Academy</a>
           </li>
         </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="page-main">
-    <section class="intro">
+      </div>
+    </nav>
+    <section class="intro container">
       <h2 class="visually-hidden">Представляем вам наше приложение</h2>
-      <p class="intro__slogan">Взгляните на жизнь иначе!</p>
+      <p class="intro__slogan page-title">Взгляните на жизнь иначе!</p>
       <a href="#" class="intro__download">Скачать приложение</a>
       <ul class="intro__platforms download-platforms">
         <li class="download-platforms__item"><a href="#">App Store</a></li>
@@ -56,6 +54,8 @@
       </ul>
       <p class="intro__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
+  </header>
+  <main class="page-main">
     <section class="features">
       <div class="features__wrapper">
         <h2 class="visually-hidden">Наши преимущества</h2>

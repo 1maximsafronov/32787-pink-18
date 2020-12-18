@@ -1,32 +1,57 @@
 .page-header {
-  background-color: rgba(#000000, 0.3);
+  background-color: #1d2631;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
 }
 
-.page-header__logo {
-  display: block;
-  width: 75px;
-  height: 22px;
+.page-header__intro {
+  padding-right: 20px;
+  padding-left: 20px;
+
+  &--inner-page {
+    // min-height: 171px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+  }
 }
 
-.page-header__logo-image {
-  display: block;
+.page-header__intro-title {
+  margin: 0;
 }
 
 @media (min-width: 660px) {
-  .page-header__logo {
-    width: 147px;
-    height: 40px;
+  .page-header {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .page-header__intro {
+    &--inner-page {
+      min-height: 330px;
+      padding-top: 80px;
+      padding-bottom: 50px;
+    }
   }
 }
 
 @media (min-width: 960px) {
-  .page-header__wrapper {
-    width: 960px;
-    padding-left: 10px;
+  .page-header {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .page-header__intro {
     padding-right: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 27px;
-    padding-bottom: 43px;
+    padding-left: 10px;
+
+    &--inner-page {
+      min-height: 284px;
+      padding-top: 70px;
+      padding-bottom: 100px;
+    }
+  }
+
+  .page-header__intro-title {
+    padding-right: 60px;
+    padding-left: 60px;
   }
 }

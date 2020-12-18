@@ -13,14 +13,14 @@
     <include src="build/img/sprite.svg"></include>
   </div>
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <nav class="main-nav">
+    <nav class="main-nav main-nav--closed">
+      <div class="main-nav__container">
         <div class="main-nav__wrapper">
           <a href="index.html" class="page-header__logo">
             <picture>
-              <source srcset="img/logo.svg 1x" media="(min-width: 940px)">
-              <source srcset="img/logo.svg 1x" media="(min-width: 660px)">
-              <img class="page-header__logo-image" src="img/logo.svg" alt="">
+              <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 960px)">
+              <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
+              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="">
             </picture>
           </a>
           <button class="main-nav__toggle" type="button">
@@ -31,8 +31,8 @@
           <li class="site-nav__item">
             <a class="site-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="site-nav__item site-nav__item--current">
-            <a class="site-nav__link" href="photo.html">Фотографии</a>
+          <li class="site-nav__item site-nav__item--active">
+            <a class="site-nav__link">Фотографии</a>
           </li>
           <li class="site-nav__item">
             <a class="site-nav__link" href="form.html">Конкурс</a>
@@ -41,12 +41,14 @@
             <a class="site-nav__link" href="#">HTML Academy</a>
           </li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
+    <section class="page-header__intro page-header__intro--inner-page container">
+      <h1 class="page-header__intro-title page-title page-title--inner">Фотографии <br>
+        пользователей</h1>
+    </section>
   </header>
   <main class="page-main">
-    <h1 class="page-title">Фотографии
-      пользователей</h1>
     <section class="photos">
       <div class="container">
         <h2 class="photos__title">Взгляните на фотографии, которые выкладывают пользователи!
