@@ -1,0 +1,44 @@
+.button {
+  padding: 15px;
+
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  background-color: #2aab6d;
+
+  font-size: 18px;
+  line-height: 30px;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+    background-color: #1c9b5e;
+  }
+
+  &:disabled,
+  &--disablerd {
+    cursor: not-allowed;
+
+    color: #ffffff;
+    background-color: #e5e5e5;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      background-color: #e5e5e5;
+    }
+
+    &:active {
+      color: #ffffff;
+      background-color: #e5e5e5;
+    }
+  }
+}
