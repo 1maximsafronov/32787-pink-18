@@ -1,0 +1,155 @@
+
+
+.editor__list {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0;
+  margin-bottom: 38px;
+  padding: 0;
+  padding-top: 42px;
+  padding-right: 20px;
+  padding-bottom: 74px;
+  padding-left: 20px;
+
+  list-style: none;
+
+  border-bottom: 1px solid rgba(#000000, 0.1);
+}
+
+.editor__item {
+  &--active {
+    .editor__range {
+      display: block;
+    }
+
+    .editor__icon {
+      opacity: 1;
+
+      fill: #d22856;
+    }
+  }
+}
+
+.editor__button {
+  display: block;
+
+  padding: 0;
+
+  cursor: pointer;
+
+  border: none;
+  background: none;
+}
+
+.editor__icon {
+  display: block;
+
+  opacity: 0.3;
+
+  fill: #283645;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.editor__range {
+  position: absolute;
+  right: 20px;
+  bottom: 24px;
+  left: 20px;
+
+  display: none;
+}
+
+
+@media (min-width: 660px) {
+  .editor__list {
+    display: block;
+
+    padding: 0;
+
+    border: none;
+  }
+
+  .editor__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 20px;
+    padding-right: 18px;
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid rgba(#000000, 0.1);
+  }
+
+  .editor__button {
+    &--crop {
+      .editor__icon {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    &--fill {
+      .editor__icon {
+        width: 24px;
+        height: 22px;
+      }
+    }
+
+    &--contrast {
+      .editor__icon {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .editor__range {
+    position: static;
+
+    display: block;
+
+    width: 202px;
+  }
+}
+
+@media (min-width: 960px) {
+  .editor__item {
+    padding-right: 30px;
+  }
+
+  .editor__button {
+    &--crop {
+      .editor__icon {
+        width: 44px;
+        height: 44px;
+      }
+    }
+
+    &--fill {
+      .editor__icon {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    &--contrast {
+      .editor__icon {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  .editor__range {
+    width: 288px;
+  }
+}

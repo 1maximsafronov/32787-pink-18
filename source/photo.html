@@ -197,25 +197,39 @@
               <img class="upload__preview-image" src="https://picsum.photos/280/374" alt="">
             </picture>
           </div>
-          <div class="upload__filters filters">
-
-            <ul class="filters__list">
-              <li class="filters__item">
-                <div class="range-slide">
+          <div class="upload__editor editor">
+            <ul class="editor__list">
+              <li class="editor__item editor__item--active">
+                <button class="editor__button editor__button--crop">
+                  <svg class="editor__icon" width="44" height="44">
+                    <use xlink:href="#icon-editor-crop"></use>
+                  </svg>
+                </button>
+                <div class="editor__range range-slide">
                   <div class="range-slide__bar">
                     <button class="range-slide__toggle"></button>
                   </div>
                 </div>
               </li>
-              <li class="filters__item">
-                <div class="range-slide">
+              <li class="editor__item">
+                <button class="editor__button editor__button--fill">
+                  <svg class="editor__icon" width="48" height="48">
+                    <use xlink:href="#icon-editor-fill"></use>
+                  </svg>
+                </button>
+                <div class="editor__range range-slide">
                   <div class="range-slide__bar">
                     <button class="range-slide__toggle"></button>
                   </div>
                 </div>
               </li>
-              <li class="filters__item">
-                <div class="range-slide">
+              <li class="editor__item">
+                <button class="editor__button editor__button--contrast">
+                  <svg class="editor__icon" width="32" height="32">
+                    <use xlink:href="#icon-editor-contrast"></use>
+                  </svg>
+                </button>
+                <div class="editor__range range-slide">
                   <div class="range-slide__bar">
                     <button class="range-slide__toggle"></button>
                   </div>

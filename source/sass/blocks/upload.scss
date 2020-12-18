@@ -1,6 +1,3 @@
-.upload {
-
-}
 
 .upload__wrapper {
   width: 320px;
@@ -123,8 +120,20 @@
     height: 400px;
   }
 
-  .upload__filters {
+  .upload__editor {
+    display: flex;
+    flex-direction: column;
+
     width: 300px;
+    padding-left: 25px;
+  }
+
+  .upload__buttons {
+    margin-top: auto;
+  }
+
+  .upload__button {
+    margin-bottom: 24px;
   }
 }
 
@@ -142,7 +151,18 @@
     padding-left: 80px;
   }
 
-  .upload__filters {
+  .upload__editor {
     width: 410px;
+    padding: 0;
+  }
+
+  .upload__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .upload__button {
+    width: 183px;
+    margin: 0;
   }
 }
