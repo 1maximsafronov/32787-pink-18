@@ -48,14 +48,17 @@
     <h1 class="page-title">Фотографии
       пользователей</h1>
     <section class="photos">
-      <h2 class="photos__title">Взгляните на фотографии, которые выкладывают пользователи!
-        Видите, как не хватает ваших?</h2>
-      <article class="photos__big user-photo">
+      <div class="container">
+        <h2 class="photos__title">Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?</h2>
+      </div>
+      <article class="photos__big user-photo user-photo--big container">
         <p class="user-photo__picture">
           <picture>
-            <source srcset="https://picsum.photos/1200/506 1x" media="(min-width: 940px)">
-            <source srcset="https://picsum.photos/660/509 1x" media="(min-width: 660px)">
-            <img class="user-photo__image" src="https://picsum.photos/320/137" alt="">
+            <source srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x" media=" (min-width: 940px)">
+            <source srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x" media="(min-width: 660px)">
+            <img class="user-photo__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
+              alt="">
           </picture>
         </p>
         <div class="user-photo__info">
@@ -68,122 +71,143 @@
           <p class="user-photo__likes">Нравится: 215</p>
         </div>
       </article>
-      <ul class="photos__list">
-        <li class="photos__item">
-          <article class="user-photo">
-            <p class="user-photo__picture">
-              <picture>
-                <source srcset="https://picsum.photos/300/400 1x" media="(min-width: 940px)">
-                <source srcset="https://picsum.photos/300/300 1x" media="(min-width: 660px)">
-                <img class="user-photo__image" src="https://picsum.photos/280/180" alt="">
-              </picture>
-            </p>
-            <div class="user-photo__info">
-              <p class="user-photo__author">
-                Левон
-                <span class="user-photo__date">(5 часов назад)</span>
+      <div class="container">
+        <ul class="photos__list">
+          <li class="photos__item">
+            <article class="user-photo">
+              <p class="user-photo__picture">
+                <picture>
+                  <source srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x"
+                    media=" (min-width: 940px)">
+                  <source srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x"
+                    media="(min-width: 660px)">
+                  <img class="user-photo__image" src="img/photo-car-mobile@1x.jpg"
+                    srcset="img/photo-car-mobile@2x.jpg 2x" alt="">
+                </picture>
               </p>
-              <p class="user-photo__desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <p class="user-photo__likes">Нравится: 356</p>
-            </div>
-          </article>
-        </li>
-        <li class="photos__item">
-          <article class="user-photo">
-            <p class="user-photo__picture">
-              <picture>
-                <source srcset="https://picsum.photos/300/400 1x" media="(min-width: 940px)">
-                <source srcset="https://picsum.photos/300/300 1x" media="(min-width: 660px)">
-                <img class="user-photo__image" src="https://picsum.photos/280/180" alt="">
-              </picture>
-            </p>
-            <div class="user-photo__info">
-              <p class="user-photo__author">
-                Антон
-                <span class="user-photo__date">(12 часов назад)</span>
+              <div class="user-photo__info">
+                <p class="user-photo__author">
+                  Левон
+                  <span class="user-photo__date">(5 часов назад)</span>
+                </p>
+                <p class="user-photo__desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <p class="user-photo__likes">Нравится: 356</p>
+              </div>
+            </article>
+          </li>
+          <li class="photos__item">
+            <article class="user-photo">
+              <p class="user-photo__picture">
+                <picture>
+                  <source srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x"
+                    media=" (min-width: 940px)">
+                  <source srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x"
+                    media="(min-width: 660px)">
+                  <img class="user-photo__image" src="img/photo-drumset-mobile@1x.jpg"
+                    srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="">
+                </picture>
               </p>
-              <p class="user-photo__desc">Соседи будут рады!</p>
-              <p class="user-photo__likes">Нравится: 666</p>
-            </div>
-          </article>
-        </li>
-        <li class="photos__item">
-          <article class="user-photo">
-            <p class="user-photo__picture">
-              <picture>
-                <source srcset="https://picsum.photos/300/400 1x" media="(min-width: 940px)">
-                <source srcset="https://picsum.photos/300/300 1x" media="(min-width: 660px)">
-                <img class="user-photo__image" src="https://picsum.photos/280/180" alt="">
-              </picture>
-            </p>
-            <div class="user-photo__info">
-              <p class="user-photo__author">
-                Борис
-                <span class="user-photo__date">(20 часов назад)</span>
+              <div class="user-photo__info">
+                <p class="user-photo__author">
+                  Антон
+                  <span class="user-photo__date">(12 часов назад)</span>
+                </p>
+                <p class="user-photo__desc">Соседи будут рады!</p>
+                <p class="user-photo__likes">Нравится: 666</p>
+              </div>
+            </article>
+          </li>
+          <li class="photos__item">
+            <article class="user-photo">
+              <p class="user-photo__picture">
+                <picture>
+                  <source srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x"
+                    media=" (min-width: 940px)">
+                  <source srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x"
+                    media="(min-width: 660px)">
+                  <img class="user-photo__image" src="img/photo-window-mobile@1x.jpg"
+                    srcset="img/photo-window-mobile@2x.jpg 2x" alt="">
+                </picture>
               </p>
-              <p class="user-photo__desc">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <p class="user-photo__likes">Нравится: 215</p>
-            </div>
-          </article>
-        </li>
-        <li class="photos__item">
-          <article class="user-photo">
-            <p class="user-photo__picture">
-              <picture>
-                <source srcset="https://picsum.photos/300/400 1x" media="(min-width: 940px)">
-                <source srcset="https://picsum.photos/300/300 1x" media="(min-width: 660px)">
-                <img class="user-photo__image" src="https://picsum.photos/280/180" alt="">
-              </picture>
-            </p>
-            <div class="user-photo__info">
-              <p class="user-photo__author">
-                Сергей
-                <span class="user-photo__date">(25 часов назад)</span>
+              <div class="user-photo__info">
+                <p class="user-photo__author">
+                  Борис
+                  <span class="user-photo__date">(20 часов назад)</span>
+                </p>
+                <p class="user-photo__desc">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <p class="user-photo__likes">Нравится: 215</p>
+              </div>
+            </article>
+          </li>
+          <li class="photos__item">
+            <article class="user-photo">
+              <p class="user-photo__picture">
+                <picture>
+                  <source srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x"
+                    media=" (min-width: 940px)">
+                  <source srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x"
+                    media="(min-width: 660px)">
+                  <img class="user-photo__image" src="img/photo-fair-mobile@1x.jpg"
+                    srcset="img/photo-fair-mobile@2x.jpg 2x" alt="">
+                </picture>
               </p>
-              <p class="user-photo__desc">Самая кубанская в мире!</p>
-              <p class="user-photo__likes">Нравится: 4</p>
-            </div>
-          </article>
-        </li>
-        <li class="photos__item">
-          <article class="user-photo">
-            <p class="user-photo__picture">
-              <picture>
-                <source srcset="https://picsum.photos/300/400 1x" media="(min-width: 940px)">
-                <source srcset="https://picsum.photos/300/300 1x" media="(min-width: 660px)">
-                <img class="user-photo__image" src="https://picsum.photos/280/180" alt="">
-              </picture>
-            </p>
-            <div class="user-photo__info">
-              <p class="user-photo__author">
-                Максим
-                <span class="user-photo__date">(40 часов назад)</span>
+              <div class="user-photo__info">
+                <p class="user-photo__author">
+                  Сергей
+                  <span class="user-photo__date">(25 часов назад)</span>
+                </p>
+                <p class="user-photo__desc">Самая кубанская в мире!</p>
+                <p class="user-photo__likes">Нравится: 4</p>
+              </div>
+            </article>
+          </li>
+          <li class="photos__item">
+            <article class="user-photo">
+              <p class="user-photo__picture">
+                <picture>
+                  <source srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x"
+                    media=" (min-width: 940px)">
+                  <source srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x"
+                    media="(min-width: 660px)">
+                  <img class="user-photo__image" src="img/photo-pov-mobile@1x.jpg"
+                    srcset="img/photo-pov-mobile@2x.jpg 2x" alt="">
+                </picture>
               </p>
-              <p class="user-photo__desc">Где снег-то?</p>
-              <p class="user-photo__likes">Нравится: 150</p>
-            </div>
-          </article>
-        </li>
-        <li class="photos__item">
-          <article class="user-photo">
-            <p class="user-photo__picture">
-              <picture>
-                <source srcset="https://picsum.photos/300/400 1x" media="(min-width: 940px)">
-                <source srcset="https://picsum.photos/300/300 1x" media="(min-width: 660px)">
-                <img class="user-photo__image" src="https://picsum.photos/280/180" alt="">
-              </picture>
-            </p>
-            <div class="user-photo__info">
-              <p class="user-photo__author">
-                Надежда
-                <span class="user-photo__date">(45 часов назад)</span>
+              <div class="user-photo__info">
+                <p class="user-photo__author">
+                  Максим
+                  <span class="user-photo__date">(40 часов назад)</span>
+                </p>
+                <p class="user-photo__desc">Где снег-то?</p>
+                <p class="user-photo__likes">Нравится: 150</p>
+              </div>
+            </article>
+          </li>
+          <li class="photos__item">
+            <article class="user-photo">
+              <p class="user-photo__picture">
+                <picture>
+                  <source srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x" media=" (min-width:
+                  940px)">
+                  <source srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x"
+                    media="(min-width: 660px)">
+                  <img class="user-photo__image" src="img/photo-wing-mobile@1x.jpg"
+                    srcset="img/photo-wing-mobile@2x.jpg 2x" alt="">
+                </picture>
               </p>
-              <p class="user-photo__desc">Всем GM и взаимные лайки!</p>
-              <p class="user-photo__likes">Нравится: 2560</p>
-            </div>
-          </article>
-        </li>
-      </ul>
+              <div class="user-photo__info">
+                <p class="user-photo__author">
+                  Надежда
+                  <span class="user-photo__date">(45 часов назад)</span>
+                </p>
+                <p class="user-photo__desc">Всем GM и взаимные лайки!</p>
+                <p class="user-photo__likes">Нравится: 2560</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+
     </section>
     <section class="upload">
       <div class="upload__wrapper">
@@ -192,9 +216,12 @@
         <form class="upload__form" action="">
           <div class="upload__preview">
             <picture>
-              <source srcset="https://picsum.photos/300/400 1x" media="(min-width: 940px)">
-              <source srcset="https://picsum.photos/300/400 1x" media="(min-width: 660px)">
-              <img class="upload__preview-image" src="https://picsum.photos/280/374" alt="">
+              <source srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x" media=" (min-width:
+                              940px)">
+              <source srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x"
+                media="(min-width: 660px)">
+              <img class="upload__preview-image" src="img/photo-road-mobile@1x.jpg"
+                srcset="img/photo-road-mobile@2x.jpg 2x" alt="">
             </picture>
           </div>
           <div class="upload__editor editor">
