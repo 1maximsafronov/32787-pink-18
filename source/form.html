@@ -55,7 +55,7 @@
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста,
           заполните форму ниже:
         </p>
-        <fieldset class="contest-form__user-data">
+        <fieldset class="contest-form__section contest-form__section--user-data">
           <legend></legend>
           <p class="custom-text-field">
             <label for="user-surname">Фамилия:</label>
@@ -70,9 +70,9 @@
             <input type="text" id="user-middle-name" name="user-middle-name" placeholder="Ну и отчество тоже">
           </p>
         </fieldset>
-        <fieldset class="contest-form__achievement">
-          <legend>Ваши безбашенные достижения в путешествии</legend>
-          <ul class="checkbox-list">
+        <fieldset class="contest-form__section contest-form__section--achievement">
+          <legend class="contest-form__title">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="contest-form__checkbox-list checkbox-list">
             <li class="custom-checkbox">
               <input class="visually-hidden" type="checkbox" name="journey-achievement" id="" checked>
               <label for="">Сделал селфи с акулой</label>
@@ -99,19 +99,19 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="contest-form__contacts">
-          <legend></legend>
-          <p class="custom-text-field">
+        <fieldset class="contest-form__section contest-form__section--contacts">
+          <legend class="contest-form__title">Контактная информация</legend>
+          <p class="custom-text-field custom-text-field--phone">
             <label for="user-phone">Номер телефона</label>
             <input type="tel" id="user-phone" name="user-phone" placeholder="Номер, пожалуйста">
           </p>
-          <p class="custom-text-field">
+          <p class="custom-text-field custom-text-field--email">
             <label for="user-email">адрес почты</label>
             <input type="email" id="user-email" name="user-email" placeholder="Введите почту *" required>
           </p>
         </fieldset>
-        <fieldset class="contest-form__app">
-          <legend>С каким приложением путешествовали?</legend>
+        <fieldset class="contest-form__section contest-form__section--app">
+          <legend class="contest-form__title">С каким приложением путешествовали?</legend>
           <ul class="radio-list">
             <li class="custom-radio">
               <input class="visually-hidden" type="radio" name="user-app" id="user-app-ios" checked>
@@ -127,8 +127,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="contest-form__comment">
-          <legend>Опишите свои эмоции</legend>
+        <fieldset class="contest-form__section contest-form__section--comment">
+          <legend class="contest-form__title">Опишите свои эмоции</legend>
           <textarea class="custom-textarea" name="user-review" id="user-comment" cols="30" rows="10"
             placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>

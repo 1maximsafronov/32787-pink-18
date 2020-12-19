@@ -31,4 +31,26 @@
     font-size: 14px;
     line-height: 30px;
   }
+
+  &--phone {
+    input {
+      padding-right: 80px;
+
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: 50%;
+      box-shadow: inset -60px 0 0 0 #e5e5e5;
+    }
+  }
+
+  &--email {
+    input {
+      padding-right: 80px;
+
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      box-shadow: inset -60px 0 0 0 #e5e5e5;
+    }
+  }
 }
