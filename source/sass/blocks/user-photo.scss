@@ -1,4 +1,6 @@
 .user-photo {
+  position: relative;
+
   background-color: #f2f2f2;
 
   &--big {
@@ -11,6 +13,26 @@
       background-color: #f2f2f2;
     }
   }
+}
+
+.user-photo__label {
+  position: absolute;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 6px;
+  padding-right: 20px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: #d22856;
+
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 24px;
 }
 
 .user-photo__picture {
