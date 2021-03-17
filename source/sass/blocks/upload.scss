@@ -46,6 +46,7 @@
   margin-bottom: 12px;
   padding: 15px;
 
+  cursor: pointer;
   text-align: center;
 
   border-width: 3px;
@@ -91,6 +92,11 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &--disbled,
+  &:disabled {
+    cursor: not-allowed;
   }
 }
 
