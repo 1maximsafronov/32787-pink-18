@@ -58,15 +58,18 @@
           Видите, как не хватает ваших?</h2>
       </div>
       <article class="photos__big user-photo user-photo--big container">
-        <p class="user-photo__label">Панарама дня</p>
-        <p class="user-photo__picture">
+
+        <div class="user-photo__picture">
+          <div class="user-photo__label-wrapper container">
+            <p class="user-photo__label">Панарама дня</p>
+          </div>
           <picture>
             <source srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x" media=" (min-width: 940px)">
             <source srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x" media="(min-width: 660px)">
             <img class="user-photo__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
               alt="">
           </picture>
-        </p>
+        </div>
         <div class="user-photo__info">
           <p class="user-photo__author">
             Анна
@@ -82,14 +85,16 @@
           <li class="photos__item">
             <article class="user-photo">
               <p class="user-photo__picture">
-                <picture>
-                  <source srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x"
-                    media=" (min-width: 940px)">
-                  <source srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x"
-                    media="(min-width: 660px)">
-                  <img class="user-photo__image" src="img/photo-car-mobile@1x.jpg"
-                    srcset="img/photo-car-mobile@2x.jpg 2x" alt="">
-                </picture>
+                <a href="/img/photo-car-desktop@2x.jpg">
+                  <picture>
+                    <source srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x"
+                      media=" (min-width: 940px)">
+                    <source srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x"
+                      media="(min-width: 660px)">
+                    <img class="user-photo__image" src="img/photo-car-mobile@1x.jpg"
+                      srcset="img/photo-car-mobile@2x.jpg 2x" alt="">
+                  </picture>
+                </a>
               </p>
               <div class="user-photo__info">
                 <p class="user-photo__author">
@@ -97,21 +102,28 @@
                   <span class="user-photo__date">(5 часов назад)</span>
                 </p>
                 <p class="user-photo__desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <p class="user-photo__likes">Нравится: 356</p>
+                <p class="user-photo__likes">
+                  <svg class="user-photo__likes-icon" width="13px" height="12px">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                  <span class="user-photo__likes-value">Нравится: 356</span>
+                </p>
               </div>
             </article>
           </li>
           <li class="photos__item">
             <article class="user-photo">
               <p class="user-photo__picture">
-                <picture>
-                  <source srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x"
-                    media=" (min-width: 940px)">
-                  <source srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x"
-                    media="(min-width: 660px)">
-                  <img class="user-photo__image" src="img/photo-drumset-mobile@1x.jpg"
-                    srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="">
-                </picture>
+                <a href="/img/photo-drumset-desktop@2x.jpg">
+                  <picture>
+                    <source srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x"
+                      media=" (min-width: 940px)">
+                    <source srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x"
+                      media="(min-width: 660px)">
+                    <img class="user-photo__image" src="img/photo-drumset-mobile@1x.jpg"
+                      srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="">
+                  </picture>
+                </a>
               </p>
               <div class="user-photo__info">
                 <p class="user-photo__author">
@@ -119,21 +131,28 @@
                   <span class="user-photo__date">(12 часов назад)</span>
                 </p>
                 <p class="user-photo__desc">Соседи будут рады!</p>
-                <p class="user-photo__likes">Нравится: 666</p>
+                <p class="user-photo__likes">
+                  <svg class="user-photo__likes-icon" width="13px" height="12px">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                  <span class="user-photo__likes-value">Нравится: 666</span>
+                </p>
               </div>
             </article>
           </li>
           <li class="photos__item">
             <article class="user-photo">
               <p class="user-photo__picture">
-                <picture>
-                  <source srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x"
-                    media=" (min-width: 940px)">
-                  <source srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x"
-                    media="(min-width: 660px)">
-                  <img class="user-photo__image" src="img/photo-window-mobile@1x.jpg"
-                    srcset="img/photo-window-mobile@2x.jpg 2x" alt="">
-                </picture>
+                <a href="/img/photo-window-desktop@2x.jpg">
+                  <picture>
+                    <source srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x"
+                      media=" (min-width: 940px)">
+                    <source srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x"
+                      media="(min-width: 660px)">
+                    <img class="user-photo__image" src="img/photo-window-mobile@1x.jpg"
+                      srcset="img/photo-window-mobile@2x.jpg 2x" alt="">
+                  </picture>
+                </a>
               </p>
               <div class="user-photo__info">
                 <p class="user-photo__author">
@@ -141,21 +160,28 @@
                   <span class="user-photo__date">(20 часов назад)</span>
                 </p>
                 <p class="user-photo__desc">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <p class="user-photo__likes">Нравится: 215</p>
+                <p class="user-photo__likes">
+                  <svg class="user-photo__likes-icon" width="13px" height="12px">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                  <span class="user-photo__likes-value">Нравится: 215</span>
+                </p>
               </div>
             </article>
           </li>
           <li class="photos__item">
             <article class="user-photo">
               <p class="user-photo__picture">
-                <picture>
-                  <source srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x"
-                    media=" (min-width: 940px)">
-                  <source srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x"
-                    media="(min-width: 660px)">
-                  <img class="user-photo__image" src="img/photo-fair-mobile@1x.jpg"
-                    srcset="img/photo-fair-mobile@2x.jpg 2x" alt="">
-                </picture>
+                <a href="/img/photo-fair-desktop@2x.jpg">
+                  <picture>
+                    <source srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x"
+                      media=" (min-width: 940px)">
+                    <source srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x"
+                      media="(min-width: 660px)">
+                    <img class="user-photo__image" src="img/photo-fair-mobile@1x.jpg"
+                      srcset="img/photo-fair-mobile@2x.jpg 2x" alt="">
+                  </picture>
+                </a>
               </p>
               <div class="user-photo__info">
                 <p class="user-photo__author">
@@ -163,21 +189,28 @@
                   <span class="user-photo__date">(25 часов назад)</span>
                 </p>
                 <p class="user-photo__desc">Самая кубанская в мире!</p>
-                <p class="user-photo__likes">Нравится: 4</p>
+                <p class="user-photo__likes">
+                  <svg class="user-photo__likes-icon" width="13px" height="12px">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                  <span class="user-photo__likes-value">Нравится: 4</span>
+                </p>
               </div>
             </article>
           </li>
           <li class="photos__item">
             <article class="user-photo">
               <p class="user-photo__picture">
-                <picture>
-                  <source srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x"
-                    media=" (min-width: 940px)">
-                  <source srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x"
-                    media="(min-width: 660px)">
-                  <img class="user-photo__image" src="img/photo-pov-mobile@1x.jpg"
-                    srcset="img/photo-pov-mobile@2x.jpg 2x" alt="">
-                </picture>
+                <a href="/img/photo-pov-desktop@2x.jpg">
+                  <picture>
+                    <source srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x"
+                      media=" (min-width: 940px)">
+                    <source srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x"
+                      media="(min-width: 660px)">
+                    <img class="user-photo__image" src="img/photo-pov-mobile@1x.jpg"
+                      srcset="img/photo-pov-mobile@2x.jpg 2x" alt="">
+                  </picture>
+                </a>
               </p>
               <div class="user-photo__info">
                 <p class="user-photo__author">
@@ -185,21 +218,28 @@
                   <span class="user-photo__date">(40 часов назад)</span>
                 </p>
                 <p class="user-photo__desc">Где снег-то?</p>
-                <p class="user-photo__likes">Нравится: 150</p>
+                <p class="user-photo__likes">
+                  <svg class="user-photo__likes-icon" width="13px" height="12px">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                  <span class="user-photo__likes-value">Нравится: 150</span>
+                </p>
               </div>
             </article>
           </li>
           <li class="photos__item">
             <article class="user-photo">
               <p class="user-photo__picture">
-                <picture>
-                  <source srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x" media=" (min-width:
+                <a href="/img/photo-wing-desktop@2x.jpg">
+                  <picture>
+                    <source srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x" media=" (min-width:
                   940px)">
-                  <source srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x"
-                    media="(min-width: 660px)">
-                  <img class="user-photo__image" src="img/photo-wing-mobile@1x.jpg"
-                    srcset="img/photo-wing-mobile@2x.jpg 2x" alt="">
-                </picture>
+                    <source srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x"
+                      media="(min-width: 660px)">
+                    <img class="user-photo__image" src="img/photo-wing-mobile@1x.jpg"
+                      srcset="img/photo-wing-mobile@2x.jpg 2x" alt="">
+                  </picture>
+                </a>
               </p>
               <div class="user-photo__info">
                 <p class="user-photo__author">
@@ -207,7 +247,12 @@
                   <span class="user-photo__date">(45 часов назад)</span>
                 </p>
                 <p class="user-photo__desc">Всем GM и взаимные лайки!</p>
-                <p class="user-photo__likes">Нравится: 2560</p>
+                <p class="user-photo__likes">
+                  <svg class="user-photo__likes-icon" width="13px" height="12px">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                  <span class="user-photo__likes-value">Нравится: 2560</span>
+                </p>
               </div>
             </article>
           </li>

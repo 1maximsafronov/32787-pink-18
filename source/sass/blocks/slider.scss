@@ -97,13 +97,11 @@
   }
 }
 
-@media (min-width: 660px) {
+@media (min-width: 960px) {
   .slider__toggles {
     display: none;
   }
-}
 
-@media (min-width: 960px) {
   .slider__control {
     display: block;
   }
