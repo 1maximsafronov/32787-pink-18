@@ -12,33 +12,15 @@
     .main-nav__toggle {
       width: 50px;
       height: 24px;
+    }
 
-      &::after {
+    .main-nav__toggle-icon {
+      &--cross {
         display: none;
       }
 
-      &::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-
+      &--burger {
         display: block;
-
-        width: 100%;
-        height: 4px;
-
-        content: "";
-        transform: none;
-
-        background-color: #ffffff;
-        box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
-      }
-
-      &:hover,
-      &:focus {
-        &::before {
-          box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
-        }
       }
     }
 
@@ -54,10 +36,10 @@
   align-items: center;
   justify-content: space-between;
 
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
+  padding-top: 22px;
+  padding-right: 19px;
+  padding-bottom: 24px;
+  padding-left: 19px;
 
   border-bottom: 1px solid #000000;
   background-color: #283645;
@@ -68,8 +50,8 @@
 
   display: block;
 
-  width: 24px;
-  height: 24px;
+  width: 23px;
+  height: 23px;
   margin: 0;
   padding: 0;
 
@@ -79,33 +61,11 @@
   border-radius: 0;
   background: none;
 
-  &::before,
-  &::after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    width: 30px;
-    height: 4px;
-
-    content: "";
-
-    background-color: #ffffff;
-  }
-
-  &::before {
-    transform: translate(-50%) rotate(-45deg);
-  }
-
-  &::after {
-    transform: translate(-50%) rotate(45deg);
-  }
 
   &:hover,
   &:focus {
-    &::before,
-    &::after {
-      background-color: #d22856;
+    .main-nav__toggle-icon {
+      fill: #d22856;
     }
   }
 
@@ -114,10 +74,27 @@
   }
 }
 
+.main-nav__toggle-icon {
+  fill: #ffffff;
+
+  &--burger {
+    display: none;
+  }
+}
+
 .main-nav__list {
   margin: 0;
 
   background-color: #283645;
+}
+
+@media (min-width: 660px) {
+  .main-nav__wrapper {
+    align-items: flex-end;
+
+    padding-top: 27px;
+    padding-bottom: 42px;
+  }
 }
 
 @media (min-width: 960px) {
@@ -138,7 +115,7 @@
   }
 
   .main-nav__list {
-    margin-top: 10px;
+    margin-top: 14px;
 
     background: none;
   }
@@ -153,7 +130,7 @@
     margin-left: auto;
     padding-top: 27px;
     padding-right: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 43px;
     padding-left: 10px;
   }
 

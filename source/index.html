@@ -5,6 +5,36 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
+
+  <!-- Pixel Glass -->
+  <style>
+    html {
+      /* Mobile layout by default */
+      background-image: url("img/preview/pink-index-mobile.jpg");
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+    }
+
+    /* Tablet */
+    @media (min-width: 660px) {
+      html {
+        /* Tablet layout */
+        background-image: url("img/preview/pink-index-tablet.jpg");
+      }
+    }
+
+    /* Desktop */
+    @media (min-width: 960px) {
+      html {
+        /* Desktop layout */
+        background-image: url("img/preview/pink-index-desktop.jpg");
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css">
+  <script src="https://yoksel.github.io/pixel-glass-js/script.js" type="text/javascript"></script>
+  <!-- // Pixel Glass -->
+
   <link rel="preload" href="fonts/opensans.woff2" as="font" />
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" />
   <link rel="preload" href="fonts/opensanslight.woff2" as="font" />
@@ -27,11 +57,17 @@
             </picture>
           </a>
           <button class="main-nav__toggle" type="button">
+            <svg class="main-nav__toggle-icon main-nav__toggle-icon--cross" width="23px" height="23px">
+              <use xlink:href="#icon-menu-cross"></use>
+            </svg>
+            <svg class="main-nav__toggle-icon main-nav__toggle-icon--burger" width="50px" height="24px">
+              <use xlink:href="#icon-menu-burger"></use>
+            </svg>
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
         <ul class="main-nav__list site-nav">
-          <li class="site-nav__item site-nav__item--active">
+          <li class="site-nav__item">
             <a class="site-nav__link">Главная</a>
           </li>
           <li class="site-nav__item">
