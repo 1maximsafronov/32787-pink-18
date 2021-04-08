@@ -1,14 +1,14 @@
 .promo-app {
-  padding-top: 29px;
+  padding-top: 22px;
 
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 120px;
+  background-position: 0 108px;
 }
 
 .promo-app__title {
   margin: 0;
-  margin-bottom: 315px;
+  margin-bottom: 313px;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -28,13 +28,14 @@
   margin-bottom: 32px;
   padding: 15px;
   padding-top: 16px;
+  padding-bottom: 16px;
 
   text-align: center;
   text-decoration: none;
 
   color: #ffffff;
   border: 3px solid #ffffff;
-  border-radius: 20px;
+  border-radius: 29px;
 
   font-size: 18px;
   font-weight: 700;
@@ -98,7 +99,7 @@
 
 @media (min-width: 660px) {
   .promo-app {
-    padding-top: 100px;
+    padding-top: 92px;
     padding-right: 20px;
     padding-bottom: 110px;
     padding-left: 20px;
@@ -112,7 +113,9 @@
   }
 
   .promo-app__title {
-    margin-bottom: 35px;
+    margin-bottom: 31px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   .promo-app__download {
@@ -130,7 +133,7 @@
 
 @media (min-width: 960px) {
   .promo-app {
-    padding-top: 120px;
+    padding-top: 98px;
     padding-right: 10px;
     padding-bottom: 120px;
     padding-left: 10px;
@@ -139,7 +142,7 @@
   }
 
   .promo-app__title {
-    margin-bottom: 60px;
+    margin-bottom: 37px;
   }
 
   .promo-app__download-button {

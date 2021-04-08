@@ -7,10 +7,10 @@
   <title>HTML Academy: Пинк</title>
 
   <!-- Pixel Glass -->
-  <style>
+  <!-- <style>
     html {
       /* Mobile layout by default */
-      background-image: url("img/preview/pink-photo-mobile.jpg");
+      background-image: url("img/preview/footer-mobile.jpg");
       background-repeat: no-repeat;
       background-position: 50% 0;
     }
@@ -19,7 +19,7 @@
     @media (min-width: 660px) {
       html {
         /* Tablet layout */
-        background-image: url("img/preview/pink-photo-tablet.jpg");
+        background-image: url("img/preview/footer-tablet.jpg");
       }
     }
 
@@ -27,12 +27,12 @@
     @media (min-width: 960px) {
       html {
         /* Desktop layout */
-        background-image: url("img/preview/pink-photo-desktop.jpg");
+        background-image: url("img/preview/footer-desktop.jpg");
       }
     }
   </style>
   <link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css">
-  <script src="https://yoksel.github.io/pixel-glass-js/script.js" type="text/javascript"></script>
+  <script src="https://yoksel.github.io/pixel-glass-js/script.js" type="text/javascript"></script> -->
   <!-- // Pixel Glass -->
 
   <link rel="preload" href="fonts/opensans.woff2" as="font" />
@@ -93,9 +93,8 @@
         <h2 class="photos__title">Взгляните на фотографии, которые выкладывают пользователи!
           Видите, как не хватает ваших?</h2>
       </div>
-      <article class="photos__big user-photo user-photo--big container">
-
-        <div class="user-photo__picture">
+      <article class="photos__big user-photo user-photo--big">
+        <div class="user-photo__picture user-photo__picture--panarama">
           <div class="user-photo__label-wrapper container">
             <p class="user-photo__label">Панарама дня</p>
           </div>
@@ -106,16 +105,25 @@
               alt="">
           </picture>
         </div>
-        <div class="user-photo__info">
-          <p class="user-photo__author">
-            Анна
-            <span class="user-photo__date">(5 минут назад)</span>
-          </p>
-          <p class="user-photo__desc">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
-            перископе, задавайте свои вопросы!</p>
-          <p class="user-photo__likes">Нравится: 215</p>
+        <div class="user-photo__wrapper container">
+          <div class="user-photo__info">
+            <p class="user-photo__author">
+              Анна
+              <span class="user-photo__date">(5 минут назад)</span>
+            </p>
+            <p class="user-photo__desc">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию
+              в
+              перископе, задавайте свои вопросы!</p>
+            <p class="user-photo__likes">
+              <svg class="user-photo__likes-icon" width="13px" height="12px">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+              <span class="user-photo__likes-value">Нравится: 215</span>
+            </p>
+          </div>
         </div>
       </article>
+      <div class="smaple"></div>
       <div class="container">
         <ul class="photos__list">
           <li class="photos__item">
