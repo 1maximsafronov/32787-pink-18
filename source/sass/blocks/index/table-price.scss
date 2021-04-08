@@ -5,9 +5,6 @@
 
   table-layout: fixed;
 
-  transform: translateX(-33%);
-  white-space: nowrap;
-
   border-collapse: collapse;
 
   font-size: 14px;
@@ -15,10 +12,10 @@
 }
 
 .table-price__title {
-  width: 280px;
+  width: 278px;
   padding-top: 10px;
   padding-right: 20px;
-  padding-bottom: 24px;
+  padding-bottom: 20px;
   padding-left: 20px;
 
   text-transform: uppercase;
@@ -95,9 +92,9 @@
 
 .table-price__cell {
   padding-top: 14px;
-  padding-right: 20px;
+  padding-right: 18px;
   padding-bottom: 15px;
-  padding-left: 20px;
+  padding-left: 18px;
 
   text-align: center;
 
@@ -142,13 +139,13 @@
 
   margin: 0;
   padding: 0;
+
+  text-transform: uppercase;
 }
 
 @media (min-width: 660px) {
   .table-price {
     width: 100%;
-
-    transform: translateX(0);
   }
 
   .table-price__inner {
@@ -157,13 +154,15 @@
 
   .table-price__title {
     width: 25%;
-    padding-top: 8px;
+    padding-top: 10px;
     padding-right: 15px;
-    padding-bottom: 7px;
+    padding-bottom: 1px;
     padding-left: 15px;
 
     &--hidden {
       display: table-cell;
+
+      background-color: transparent;
     }
 
     &--hit {
@@ -198,10 +197,14 @@
 }
 
 @media (min-width: 960px) {
+  .table-price {
+    font-size: 18px;
+  }
+
   .table-price__title {
-    padding-top: 17px;
+    padding-top: 14px;
     padding-right: 22px;
-    padding-bottom: 17px;
+    padding-bottom: 18px;
     padding-left: 22px;
   }
 
