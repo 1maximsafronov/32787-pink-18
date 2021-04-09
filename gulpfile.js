@@ -12,12 +12,15 @@ const sourcemap = require("gulp-sourcemaps");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const svgstore = require("gulp-svgstore");
+const webpack = require('webpack');
+const webpackStream = require('webpack-stream');
+const webpackConfig = require('./webpack.config.js');
 
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
+    // "source/js/**",
     "source/*.ico",
     "source/css/**"
   ], {
@@ -64,6 +67,14 @@ const html = () => {
 
 exports.html = html;
 
+const js = () => {
+  return gulp.src('./source/js/index.js')
+    .pipe(webpackStream(webpackConfig), webpack)
+    .pipe(gulp.dest('./build/js'));
+}
+
+exports.js = js;
+
 const sprite = () => {
   return gulp.src("source/img/{icon-,logo-}*.svg")
     .pipe(svgstore({
@@ -94,8 +105,9 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", gulp.series("html", sync.reload));
+  gulp.watch("source/js/**/*.{js,jsx}", gulp.series("js", sync.reload));
 }
 
-const build = gulp.series(clean, copy, styles, sprite, html);
+const build = gulp.series(clean, copy, styles, sprite, html, js);
 exports.build = build;
 exports.default = gulp.series(build, server, watcher);
