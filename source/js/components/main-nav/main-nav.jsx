@@ -41,4 +41,5 @@ const MainNav = () =>{
     </nav>
   );
 };
+
 export default MainNav;
