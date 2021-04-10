@@ -1,7 +1,7 @@
 
 .feature__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 
   text-align: center;
 
@@ -38,7 +38,7 @@
 }
 
 @media (min-width: 960px) {
-  .feature {
+  .feature__wrapper {
     padding-right: 30px;
     padding-left: 30px;
   }
@@ -46,15 +46,20 @@
   .feature__picture {
     display: block;
 
+    width: 300px;
     margin: 0;
     margin-bottom: 50px;
   }
 
   .feature__image {
     display: block;
+
+    width: 300px;
   }
 
   .feature__title {
+    margin-bottom: 22px;
+
     text-align: center;
 
     font-size: 30px;
