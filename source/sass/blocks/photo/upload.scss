@@ -3,7 +3,7 @@
   width: 320px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 21px;
+  padding-top: 40px;
 }
 
 .upload__title {
@@ -46,13 +46,14 @@
   width: 100%;
   margin-bottom: 12px;
   padding: 15px;
+  padding-bottom: 16px;
 
   cursor: pointer;
   text-align: center;
 
   border-width: 3px;
   border-style: solid;
-  border-radius: 25px;
+  border-radius: 30px;
   background: none;
 
   font-size: 18px;
@@ -104,14 +105,15 @@
 @media (min-width: 660px) {
   .upload__title {
     margin-bottom: 70px;
-    padding-right: 120px;
-    padding-left: 120px;
+    padding-right: 110px;
+    padding-left: 110px;
 
     font-size: 18px;
   }
 
   .upload__wrapper {
     width: 660px;
+    padding-top: 64px;
   }
 
   .upload__form {
@@ -137,6 +139,8 @@
 
   .upload__buttons {
     margin-top: auto;
+    padding-right: 13px;
+    padding-left: 2px;
   }
 
   .upload__button {
@@ -147,25 +151,37 @@
 @media (min-width: 960px) {
   .upload__wrapper {
     width: 960px;
+    padding-top: 58px;
     padding-right: 10px;
     padding-left: 10px;
   }
 
+  .upload__title {
+    margin-bottom: 67px;
+  }
+
   .upload__form {
-    padding-top: 57px;
+    padding-top: 0;
     padding-right: 60px;
     padding-bottom: 57px;
     padding-left: 80px;
   }
 
+  .upload__preview {
+    margin-top: 57px;
+  }
+
   .upload__editor {
     width: 410px;
+    margin-top: 40px;
     padding: 0;
   }
 
   .upload__buttons {
     display: flex;
     justify-content: space-between;
+
+    padding: 0;
   }
 
   .upload__button {

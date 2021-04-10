@@ -5,19 +5,21 @@
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   margin: 0;
   margin-bottom: 38px;
   padding: 0;
   padding-top: 42px;
   padding-right: 20px;
-  padding-bottom: 74px;
+  padding-bottom: 75px;
   padding-left: 20px;
 
   list-style: none;
 
   border-bottom: 1px solid rgba(#000000, 0.1);
+
+  column-gap: 35px;
 }
 
 .editor__item {
@@ -43,6 +45,27 @@
 
   border: none;
   background: none;
+
+  &--crop {
+    .editor__icon {
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  &--fill {
+    .editor__icon {
+      width: 48px;
+      height: 43px;
+    }
+  }
+
+  &--contrast {
+    .editor__icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
 }
 
 .editor__icon {
@@ -61,7 +84,7 @@
 .editor__range {
   position: absolute;
   right: 20px;
-  bottom: 24px;
+  bottom: 34px;
   left: 20px;
 
   display: none;
@@ -82,11 +105,19 @@
     align-items: center;
     justify-content: space-between;
 
-    padding-top: 20px;
+    margin-bottom: 17px;
+    padding-top: 9px;
     padding-right: 18px;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
+    padding-left: 5px;
 
     border-bottom: 1px solid rgba(#000000, 0.1);
+  }
+
+  .editor__icon {
+    opacity: 1;
+
+    fill: #d22856;
   }
 
   .editor__button {
@@ -123,7 +154,11 @@
 
 @media (min-width: 960px) {
   .editor__item {
+    margin-bottom: 0;
+    padding-top: 15px;
     padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 0;
   }
 
   .editor__button {
@@ -137,7 +172,7 @@
     &--fill {
       .editor__icon {
         width: 48px;
-        height: 48px;
+        height: 43px;
       }
     }
 
