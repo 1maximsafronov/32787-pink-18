@@ -2,12 +2,12 @@
 .slider__list {
   position: relative;
 
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
 .slider__control {
   position: absolute;
-  top: 20px;
+  top: 30px;
 
   display: none;
 
@@ -94,6 +94,12 @@
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+@media (min-width: 660px) {
+  .slider__list {
+    margin-bottom: 39px;
   }
 }
 

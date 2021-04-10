@@ -7,9 +7,12 @@
   }
 }
 
+.review__author {
+  margin-bottom: 13px;
+}
+
 .review__author-name {
   margin: 0;
-  margin-bottom: 25px;
 
   text-align: center;
 
@@ -36,9 +39,11 @@
 
 
 @media (min-width: 660px) {
-  .review__author-name {
-    margin-bottom: 10px;
+  .review__author {
+    margin: 0;
+  }
 
+  .review__author-name {
     font-size: 20px;
   }
 
@@ -58,7 +63,7 @@
   .review__text {
     order: -1;
 
-    margin-bottom: 44px;
+    margin-bottom: 35px;
 
     font-size: 18px;
   }
@@ -74,6 +79,8 @@
   }
 
   .review__text {
+    margin-bottom: 36px;
+
     font-size: 18px;
   }
 }
