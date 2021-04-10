@@ -51,13 +51,13 @@
 .page-header__intro {
   padding-top: 30px;
   padding-right: 20px;
-  padding-bottom: 80px;
+  padding-bottom: 75px;
   padding-left: 20px;
 
 
   @media (min-width: $tablet-width) {
-    padding-top: 70px;
-    padding-bottom: 139px;
+    padding-top: 65px;
+    padding-bottom: 129px;
 
     &--inner-page {
       padding-bottom: 79px;
@@ -65,9 +65,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 64px;
+    padding-top: 58px;
     padding-right: 10px;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
     padding-left: 10px;
   }
 }
