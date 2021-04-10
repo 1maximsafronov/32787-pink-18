@@ -113,6 +113,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    column-gap: 20px;
+    row-gap: 40px;
+
     &::after {
       height: 90px;
     }
@@ -122,7 +125,7 @@
     flex-grow: 1;
 
     width: 300px;
-    margin-bottom: 40px;
+    margin: 0;
   }
 
   .contacts__item-label {
@@ -138,7 +141,7 @@
 
 @media (min-width: 960px) {
   .contacts__wrapper {
-    padding-top: 60px;
+    padding-top: 58px;
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -174,7 +177,7 @@
 
 
   .contacts__map {
-    height: 525px;
+    height: 521px;
 
     background-image: url("../img/bg-map-desktop@1x.jpg");
   }
