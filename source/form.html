@@ -16,7 +16,7 @@
   <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="page-header">
+  <!-- <header class="page-header">
     <nav class="main-nav">
       <div class="main-nav__container">
         <div class="main-nav__wrapper">
@@ -57,25 +57,25 @@
       <h1 class="page-header__intro-title page-title page-title--inner">Конкурс на самое безбашенное путешествие с Пинк
       </h1>
     </section>
-  </header>
+  </header> -->
   <main class="page-main">
-    <form class="contest-form" action="">
+    <form class="contest-form container" action="">
+      <p class="contest-form__intro">
+        Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!
+        <span class="contest-form__request-text">Пожалуйста, заполните форму ниже:</span>
+      </p>
       <div class="contest-form__wrapper">
-        <p class="contest-form__intro">
-          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста,
-          заполните форму ниже:
-        </p>
         <fieldset class="contest-form__section contest-form__section--user-data">
           <legend></legend>
-          <p class="custom-text-field">
+          <p class="contest-form__text-field custom-text-field custom-text-field--horizontal">
             <label for="user-surname">Фамилия:</label>
             <input type="text" id="user-surname" name="user-surname" placeholder="Укажите фамилию *" required>
           </p>
-          <p class="custom-text-field">
+          <p class="contest-form__text-field custom-text-field custom-text-field--horizontal">
             <label for="user-name">Имя:</label>
             <input type="text" id="user-name" name="user-name" placeholder="Введите ваше имя *" required>
           </p>
-          <p class="custom-text-field">
+          <p class="contest-form__text-field custom-text-field custom-text-field--horizontal">
             <label for="user-middle-name">Отчество:</label>
             <input type="text" id="user-middle-name" name="user-middle-name" placeholder="Ну и отчество тоже">
           </p>
@@ -111,18 +111,18 @@
         </fieldset>
         <fieldset class="contest-form__section contest-form__section--contacts">
           <legend class="contest-form__title">Контактная информация</legend>
-          <p class="custom-text-field custom-text-field--phone">
+          <p class="contest-form__text-field custom-text-field custom-text-field--phone">
             <label for="user-phone">Номер телефона</label>
             <input type="tel" id="user-phone" name="user-phone" placeholder="Номер, пожалуйста">
           </p>
-          <p class="custom-text-field custom-text-field--email">
+          <p class="contest-form__text-field custom-text-field custom-text-field--email">
             <label for="user-email">адрес почты</label>
             <input type="email" id="user-email" name="user-email" placeholder="Введите почту *" required>
           </p>
         </fieldset>
         <fieldset class="contest-form__section contest-form__section--app">
           <legend class="contest-form__title">С каким приложением путешествовали?</legend>
-          <ul class="radio-list">
+          <ul class="contest-form__radio-list radio-list">
             <li class="custom-radio">
               <input class="visually-hidden" type="radio" name="user-app" id="user-app-ios" checked>
               <label for="user-app-ios">Pink для iOS</label>
@@ -139,12 +139,12 @@
         </fieldset>
         <fieldset class="contest-form__section contest-form__section--comment">
           <legend class="contest-form__title">Опишите свои эмоции</legend>
-          <textarea class="custom-textarea" name="user-review" id="user-comment" cols="30" rows="10"
-            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <textarea class="custom-textarea contest-form__comment-field" name="user-review" id="user-comment" cols="30"
+            rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <p>
-          <button class="button" type="submit">Отправить форму</button>
-          <small>* — обязательные поля</small>
+        <p class="contest-form__bottom-wrapper">
+          <button class="contest-form__button button" type="submit">Отправить форму</button>
+          <small class="contest-form__small">* — обязательные поля</small>
         </p>
       </div>
     </form>
@@ -217,7 +217,8 @@
       <button class="message-popup__button button">ЗАКРЫТЬ ОКНО</button>
     </div>
   </section>
-  <script src="js/script.js"></script>
+  <!-- <script src="js/script.js"></script> -->
+  <script src="js/bundle.js"></script>
 </body>
 
 </html>

@@ -5,23 +5,48 @@
   line-height: 30px;
 
   label {
+    position: relative;
+
     display: flex;
     align-items: center;
+
+    padding-left: 70px;
 
     cursor: pointer;
 
     &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+
       display: block;
 
-      width: 39px;
-      height: 39px;
-      margin-right: 32px;
+      width: 41px;
+      height: 41px;
 
       content: "";
+      transform: translateY(-50%);
 
       border: 2px solid #e5e5e5;
       border-radius: 50%;
       background-color: $white-color;
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 13px;
+
+      display: none;
+
+      width: 15px;
+      height: 15px;
+
+      content: "";
+      transform: translateY(-50%);
+
+      border-radius: 50%;
+      background-color: $pink-color;
     }
 
     &:hover,
@@ -57,20 +82,7 @@
     position: relative;
 
     &::after {
-      position: absolute;
-      top: 50%;
-      left: 12px;
-
       display: block;
-
-      width: 15px;
-      height: 15px;
-
-      content: "";
-      transform: translateY(-50%);
-
-      border-radius: 50%;
-      background-color: $pink-color;
     }
   }
 }
@@ -82,7 +94,7 @@
 
   list-style: none;
 
-  grid-row-gap: 34px;
+  grid-row-gap: 45px;
 }
 
 @media (min-width: $tablet-width) {
