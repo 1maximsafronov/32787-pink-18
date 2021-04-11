@@ -3,14 +3,16 @@
 
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 108px;
+  background-position: 0 110px;
 }
 
 .promo-app__title {
   margin: 0;
-  margin-bottom: 313px;
+  margin-bottom: 316px;
   padding-right: 20px;
   padding-left: 20px;
+
+  line-height: 29px;
 }
 
 .promo-app__download {
@@ -27,7 +29,6 @@
 
   margin-bottom: 32px;
   padding: 15px;
-  padding-top: 16px;
   padding-bottom: 16px;
 
   text-align: center;
@@ -55,12 +56,15 @@
 
 .promo-app__download-list {
   display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
 
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
   padding: 0;
+  padding-right: 33px;
+  padding-left: 33px;
 
   list-style: none;
 }
@@ -88,6 +92,8 @@
 }
 
 .promo-app__download-platform {
+  margin: 0;
+
   text-align: center;
 
   color: #ffffff;
@@ -99,9 +105,9 @@
 
 @media (min-width: 660px) {
   .promo-app {
-    padding-top: 92px;
+    padding-top: 93px;
     padding-right: 20px;
-    padding-bottom: 110px;
+    padding-bottom: 114px;
     padding-left: 20px;
 
     background-image: url("../img/iphone-hand-tablet@1x.png");
@@ -116,6 +122,8 @@
     margin-bottom: 31px;
     padding-right: 30px;
     padding-left: 30px;
+
+    line-height: 48px;
   }
 
   .promo-app__download {
@@ -124,10 +132,20 @@
     background: none;
   }
 
+  .promo-app__download-button {
+    margin-bottom: 46px;
+  }
+
   .promo-app__download-platform {
     margin: 0;
 
     font-size: 18px;
+  }
+
+  .promo-app__download-list {
+    margin-bottom: 32px;
+    padding-right: 42px;
+    padding-left: 42px;
   }
 }
 
@@ -135,17 +153,26 @@
   .promo-app {
     padding-top: 98px;
     padding-right: 10px;
-    padding-bottom: 120px;
+    padding-bottom: 125px;
     padding-left: 10px;
 
     background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: 26px 100%;
   }
 
   .promo-app__title {
     margin-bottom: 37px;
+
+    line-height: 68px;
   }
 
   .promo-app__download-button {
+    margin-bottom: 68px;
+
     font-size: 21px;
+  }
+
+  .promo-app__download-list {
+    margin-bottom: 52px;
   }
 }

@@ -10,6 +10,17 @@
 @import "./blocks/global/custom-radio.scss";
 @import "./blocks/global/custom-text-field.scss";
 
+// OTHER
+@import "./blocks/message-popup.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/site-nav.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/page-title.scss";
+
+
 // INDEX PAGE
 @import "./blocks/index/promo-app.scss";
 @import "./blocks/index/reviews.scss";
@@ -31,13 +42,3 @@
 
 // FORM PAGE
 @import "./blocks/contest-form.scss";
-
-// OTHER
-@import "./blocks/message-popup.scss";
-@import "./blocks/page-header.scss";
-@import "./blocks/main-nav.scss";
-@import "./blocks/site-nav.scss";
-@import "./blocks/page-footer.scss";
-@import "./blocks/social.scss";
-@import "./blocks/copyright.scss";
-@import "./blocks/page-title.scss";
