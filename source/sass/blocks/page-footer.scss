@@ -28,7 +28,7 @@
   margin-bottom: 39px;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .page-footer__wrapper {
     align-items: flex-start;
     flex-direction: row;
@@ -54,7 +54,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .page-footer__wrapper {
     width: 960px;
     padding-top: 98px;

@@ -103,7 +103,7 @@
   line-height: 24px;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .promo-app {
     padding-top: 93px;
     padding-right: 20px;
@@ -149,7 +149,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .promo-app {
     padding-top: 98px;
     padding-right: 10px;

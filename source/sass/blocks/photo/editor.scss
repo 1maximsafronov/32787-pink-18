@@ -91,7 +91,7 @@
 }
 
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .editor__list {
     display: block;
 
@@ -152,7 +152,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .editor__item {
     margin-bottom: 0;
     padding-top: 15px;

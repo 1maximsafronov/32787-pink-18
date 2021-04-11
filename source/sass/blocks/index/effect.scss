@@ -1,4 +1,4 @@
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .effect {
     position: relative;
 
@@ -55,7 +55,7 @@
 }
 
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .effect {
     padding-top: 68px;
 

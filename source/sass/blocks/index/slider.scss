@@ -97,13 +97,13 @@
   }
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .slider__list {
     margin-bottom: 39px;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .slider__toggles {
     display: none;
   }

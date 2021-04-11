@@ -7,11 +7,11 @@
   background-position: 0 -45px;
   background-size: 1200px auto;
 
-  @media (min-width: 660px) {
+  @media (min-width: $tablet-width) {
     background-position: 0 -30px;
   }
 
-  @media (min-width: 960px) {
+  @media (min-width: $desktop-width) {
     background-position: 0 0;
     background-size: contain;
   }
@@ -23,12 +23,12 @@
   padding-bottom: 49px;
   padding-left: 20px;
 
-  @media (min-width: 660px) {
+  @media (min-width: $tablet-width) {
     padding-top: 112px;
     padding-bottom: 70px;
   }
 
-  @media (min-width: 960px) {
+  @media (min-width: $desktop-width) {
     padding-top: 157px;
     padding-right: 10px;
     padding-bottom: 98px;
@@ -42,7 +42,7 @@
   transform: translateX(-33%);
   white-space: nowrap;
 
-  @media (min-width: 660px) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 0;
 
     transform: translateX(0);
@@ -50,7 +50,7 @@
 }
 
 .price__slider-toggles {
-  @media (min-width: 660px) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }

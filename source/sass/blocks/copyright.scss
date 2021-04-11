@@ -37,7 +37,7 @@
   fill: #d22856;
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .copyright__text {
     font-size: 18px;
   }

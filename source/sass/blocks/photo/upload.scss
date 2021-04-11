@@ -102,7 +102,7 @@
   }
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .upload__title {
     margin-bottom: 70px;
     padding-right: 110px;
@@ -148,7 +148,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .upload__wrapper {
     width: 960px;
     padding-top: 58px;

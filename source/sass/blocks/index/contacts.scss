@@ -96,7 +96,7 @@
 }
 
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .contacts__wrapper {
     padding-top: 43px;
   }
@@ -139,7 +139,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .contacts__wrapper {
     padding-top: 58px;
     padding-right: 10px;

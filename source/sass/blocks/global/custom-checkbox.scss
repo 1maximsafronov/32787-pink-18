@@ -73,7 +73,7 @@
 }
 
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .custom-checkbox {
     label {
       &::before {

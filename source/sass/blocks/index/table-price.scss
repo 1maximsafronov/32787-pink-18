@@ -143,7 +143,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .table-price {
     width: 100%;
   }
@@ -196,7 +196,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .table-price {
     font-size: 18px;
   }

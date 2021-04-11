@@ -45,7 +45,7 @@
 }
 
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .social__item {
     margin-right: 5px;
   }

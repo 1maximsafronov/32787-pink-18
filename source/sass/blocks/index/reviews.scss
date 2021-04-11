@@ -15,14 +15,14 @@
   list-style: none;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .reviews__wrapper {
     width: 660px;
     padding-bottom: 45px;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .reviews {
     position: relative;
 

@@ -65,7 +65,7 @@
   }
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .contest-form__wrapper {
     width: 660px;
     padding-top: 100px;
@@ -103,7 +103,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .contest-form__wrapper {
     width: 960px;
     padding-right: 10px;
