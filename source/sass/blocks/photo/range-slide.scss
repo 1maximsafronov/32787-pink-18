@@ -9,7 +9,7 @@
 
   height: 2px;
 
-  background-color: #283645;
+  background-color: $primary-color;
 }
 
 .range-slide__toggle {
@@ -27,12 +27,12 @@
   cursor: pointer;
   transform: translateY(-50%);
 
-  border: 2px solid #d22856;
+  border: 2px solid $pink-color;
   border-radius: 50%;
-  background-color: #f2f2f2;
+  background-color: $secondery-bg-color;
 
   &:hover,
   &:focus {
-    background-color: #d22856;
+    background-color: $pink-color;
   }
 }

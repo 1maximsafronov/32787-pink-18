@@ -21,16 +21,16 @@
   width: 54px;
   height: 54px;
 
-  border: 3px solid rgba(#283645, 0.1);
+  border: 3px solid rgba($primary-color, 0.1);
   border-radius: 50%;
 
   &:hover,
   &:focus {
-    border-color: rgba(#283645, 1);
+    border-color: rgba($primary-color, 1);
   }
 
   &:active {
-    border-color: rgba(#283645, 0.1);
+    border-color: rgba($primary-color, 0.1);
 
     .social__icon {
       opacity: 0.1;
@@ -41,7 +41,7 @@
 .social__icon {
   margin: auto;
 
-  fill: #d22856;
+  fill: $pink-color;
 }
 
 

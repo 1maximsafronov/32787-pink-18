@@ -5,28 +5,28 @@
     padding-bottom: 14px;
     padding-left: 20px;
 
-    color: #283645;
+    color: $primary-color;
     border: 2px solid #e5e5e5;
     border-radius: 2px;
-    background-color: #ffffff;
+    background-color: $white-color;
 
     font-size: 18px;
     line-height: 30px;
 
     &:hover {
-      border: 2px solid #283645;
+      border: 2px solid $primary-color;
     }
 
     &:focus,
     &:active {
-      border: 2px solid #d22856;
+      border: 2px solid $pink-color;
     }
   }
 
   label {
     text-transform: uppercase;
 
-    color: #d22856;
+    color: $pink-color;
 
     font-size: 14px;
     line-height: 30px;

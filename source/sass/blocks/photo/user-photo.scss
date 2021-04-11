@@ -4,13 +4,13 @@
   display: flex;
   flex-direction: column;
 
-  background-color: #f2f2f2;
+  background-color: $secondery-bg-color;
 
   &--big {
     background: none;
 
     .user-photo__info {
-      background-color: #f2f2f2;
+      background-color: $secondery-bg-color;
     }
 
     .user-photo__wrapper {
@@ -97,8 +97,8 @@
 
   text-transform: uppercase;
 
-  color: #ffffff;
-  background-color: #d22856;
+  color: $white-color;
+  background-color: $pink-color;
 
   font-size: 12px;
   font-weight: bold;
@@ -181,7 +181,7 @@
 .user-photo__author {
   margin: 0;
 
-  color: #283645;
+  color: $primary-color;
 
   font-size: 14px;
   font-weight: 700;
@@ -200,7 +200,7 @@
   margin: 0;
   margin-bottom: 9px;
 
-  color: #283645;
+  color: $primary-color;
 
   font-size: 14px;
   line-height: 24px;
@@ -215,7 +215,7 @@
 
   text-transform: uppercase;
 
-  color: #d22856;
+  color: $pink-color;
 
   font-size: 12px;
   line-height: 24px;
@@ -230,7 +230,7 @@
   height: 12px;
   margin-right: 18px;
 
-  fill: #d22856;
+  fill: $pink-color;
 
   @media (min-width: $tablet-width) {
     order: 1;

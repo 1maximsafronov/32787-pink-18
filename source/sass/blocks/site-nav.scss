@@ -16,7 +16,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: $white-color;
 
   font-size: 18px;
   font-weight: 700;
@@ -50,7 +50,7 @@
 
       content: "";
 
-      background-color: #ffffff;
+      background-color: $white-color;
     }
   }
 }
@@ -65,17 +65,17 @@
 
   text-decoration: none;
 
-  color: #ffffff;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  border-bottom: 1px solid #000000;
+  color: $white-color;
+  border-top: 1px solid rgba($white-color, 0.15);
+  border-bottom: 1px solid $black-color;
 
   &:hover,
   &:focus {
-    color: #d22856;
+    color: $pink-color;
   }
 
   &:active {
-    color: rgba(#d22856, 0.3);
+    color: rgba($pink-color, 0.3);
   }
 
   @media (min-width: $desktop-width) {
@@ -86,7 +86,7 @@
     background: none;
 
     &:active {
-      color: rgba(#ffffff, 0.3);
+      color: rgba($white-color, 0.3);
     }
   }
 }

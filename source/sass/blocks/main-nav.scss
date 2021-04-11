@@ -1,13 +1,13 @@
 .main-nav {
-  background-color: rgba(#000000, 0.3);
+  background-color: rgba($black-color, 0.3);
 
   @media (min-width: $desktop-width) {
-    background-color: rgba(#000000, 0.3);
+    background-color: rgba($black-color, 0.3);
   }
 }
 
 .main-nav--closed {
-  background-color: rgba(#000000, 0.3);
+  background-color: rgba($black-color, 0.3);
 
   .main-nav__wrapper {
     padding-top: 21px;
@@ -49,7 +49,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: rgba(#000000, 0.3);
+    background-color: rgba($black-color, 0.3);
 
     .main-nav__wrapper {
       background: none;
@@ -72,8 +72,8 @@
   padding-bottom: 23px;
   padding-left: 20px;
 
-  border-bottom: 1px solid #000000;
-  background-color: #283645;
+  border-bottom: 1px solid $black-color;
+  background-color: $primary-color;
 
   @media (min-width: $tablet-width) {
     align-items: flex-end;
@@ -111,7 +111,7 @@
   &:hover,
   &:focus {
     .main-nav__toggle-icon {
-      fill: #d22856;
+      fill: $pink-color;
     }
   }
 
@@ -125,7 +125,7 @@
 }
 
 .main-nav__toggle-icon {
-  fill: #ffffff;
+  fill: $white-color;
 
   &--burger {
     display: none;
@@ -135,7 +135,7 @@
 .main-nav__list {
   margin: 0;
 
-  background-color: #283645;
+  background-color: $primary-color;
 
   @media (min-width: $desktop-width) {
     margin-top: 14px;

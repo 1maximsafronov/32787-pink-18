@@ -17,7 +17,7 @@
 
   list-style: none;
 
-  border-bottom: 1px solid rgba(#000000, 0.1);
+  border-bottom: 1px solid rgba($black-color, 0.1);
 
   column-gap: 35px;
 }
@@ -31,7 +31,7 @@
     .editor__icon {
       opacity: 1;
 
-      fill: #d22856;
+      fill: $pink-color;
     }
   }
 }
@@ -73,7 +73,7 @@
 
   opacity: 0.3;
 
-  fill: #283645;
+  fill: $primary-color;
 
   &:hover,
   &:focus {
@@ -111,13 +111,13 @@
     padding-bottom: 24px;
     padding-left: 5px;
 
-    border-bottom: 1px solid rgba(#000000, 0.1);
+    border-bottom: 1px solid rgba($black-color, 0.1);
   }
 
   .editor__icon {
     opacity: 1;
 
-    fill: #d22856;
+    fill: $pink-color;
   }
 
   .editor__button {

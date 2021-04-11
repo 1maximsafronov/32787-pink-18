@@ -65,7 +65,7 @@
   opacity: 0.3;
   border: none;
   border-radius: 50%;
-  background-color: #000000;
+  background-color: $black-color;
 
   &:hover,
   &:focus {
@@ -80,15 +80,15 @@
     cursor: auto;
 
     opacity: 1;
-    background-color: #ffffff;
-    box-shadow: 0 0 0 3px #283645;
+    background-color: $white-color;
+    box-shadow: 0 0 0 3px $primary-color;
 
     &:hover,
     &:focus,
     &:active {
       opacity: 1;
-      background-color: #ffffff;
-      box-shadow: 0 0 0 3px #283645;
+      background-color: $white-color;
+      box-shadow: 0 0 0 3px $primary-color;
     }
   }
 

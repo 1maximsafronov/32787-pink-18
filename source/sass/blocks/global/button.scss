@@ -5,7 +5,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: $white-color;
   border: none;
   border-radius: 2px;
   background-color: #2aab6d;
@@ -19,7 +19,7 @@
   }
 
   &:active {
-    color: rgba(#ffffff, 0.3);
+    color: rgba($white-color, 0.3);
     background-color: #1c9b5e;
   }
 
@@ -27,17 +27,17 @@
   &--disablerd {
     cursor: not-allowed;
 
-    color: #ffffff;
+    color: $white-color;
     background-color: #e5e5e5;
 
     &:hover,
     &:focus {
-      color: #ffffff;
+      color: $white-color;
       background-color: #e5e5e5;
     }
 
     &:active {
-      color: #ffffff;
+      color: $white-color;
       background-color: #e5e5e5;
     }
   }

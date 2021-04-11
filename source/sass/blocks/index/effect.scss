@@ -29,7 +29,7 @@
     margin-bottom: 11px;
     padding-right: 20px;
 
-    color: #000000;
+    color: $black-color;
 
     font-size: 30px;
     font-weight: 700;
@@ -40,14 +40,14 @@
     margin: 0;
     margin-bottom: 10px;
 
-    color: #283645;
+    color: $primary-color;
 
     font-size: 14px;
     line-height: 24px;
   }
 
   .effect__link {
-    color: #d22856;
+    color: $pink-color;
 
     font-size: 14px;
     line-height: 24px;
@@ -59,7 +59,7 @@
   .effect {
     padding-top: 68px;
 
-    background-color: #f2f2f2;
+    background-color: $secondery-bg-color;
   }
 
   .effect__diagramm {
