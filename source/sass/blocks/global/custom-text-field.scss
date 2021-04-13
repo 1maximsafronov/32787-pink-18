@@ -47,13 +47,31 @@
 
 @media (min-width: $tablet-width) {
   .custom-text-field {
+    label {
+      order: 1;
+
+      margin-bottom: 0;
+      padding-left: 19px;
+    }
+
+    input {
+      margin-bottom: 10px;
+    }
+
     &--horizontal {
       align-items: center;
       flex-direction: row;
       flex-wrap: wrap;
 
+      input {
+        margin-bottom: 0;
+      }
+
       label {
+        order: 0;
+
         margin-right: 18px;
+        padding-left: 0;
       }
     }
 
@@ -77,11 +95,6 @@
         background-position: 50% 50%;
         box-shadow: inset -60px 0 0 0 #e5e5e5;
       }
-    }
-
-    label {
-      margin-bottom: 0;
-      padding-left: 0;
     }
   }
 }
