@@ -1,11 +1,21 @@
+.effect {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .effect {
+    display: block;
+  }
+
+  .effect__wrapper {
     position: relative;
 
     display: flex;
     justify-content: space-between;
 
     padding-top: 54px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .effect__diagramm {
@@ -54,12 +64,15 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .effect {
-    padding-top: 68px;
-
     background-color: $secondery-bg-color;
+  }
+
+  .effect__wrapper {
+    padding-top: 68px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .effect__diagramm {
