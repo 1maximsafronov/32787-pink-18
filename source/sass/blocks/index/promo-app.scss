@@ -25,33 +25,7 @@
 }
 
 .promo-app__download-button {
-  display: block;
-
   margin-bottom: 32px;
-  padding: 15px;
-  padding-bottom: 16px;
-
-  text-align: center;
-  text-decoration: none;
-
-  color: $white-color;
-  border: 3px solid $white-color;
-  border-radius: 29px;
-
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 18px;
-
-  &:hover,
-  &:focus {
-    color: $pink-color;
-    background-color: $white-color;
-  }
-
-  &:active {
-    color: rgba($pink-color, 0.3);
-    background-color: $white-color;
-  }
 }
 
 .promo-app__download-list {
@@ -168,8 +142,6 @@
 
   .promo-app__download-button {
     margin-bottom: 68px;
-
-    font-size: 21px;
   }
 
   .promo-app__download-list {

@@ -45,60 +45,9 @@
 
   width: 100%;
   margin-bottom: 12px;
-  padding: 15px;
-  padding-bottom: 16px;
-
-  cursor: pointer;
-  text-align: center;
-
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 30px;
-  background: none;
-
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 18px;
-
-  &--send {
-    color: $pink-color;
-    border-color: $pink-color;
-
-    &:hover,
-    &:focus {
-      color: $white-color;
-      background-color: $pink-color;
-    }
-
-    &:active {
-      color: rgba($white-color, 0.3);
-    }
-  }
-
-  &--cancel {
-    opacity: 0.1;
-    color: $primary-color;
-    border-color: $primary-color;
-
-    &:hover,
-    &:focus {
-      opacity: 0.3;
-    }
-
-    &:active {
-      opacity: 0.3;
-      color: $white-color;
-      background-color: $primary-color;
-    }
-  }
 
   &:last-child {
     margin-bottom: 0;
-  }
-
-  &--disbled,
-  &:disabled {
-    cursor: not-allowed;
   }
 }
 
