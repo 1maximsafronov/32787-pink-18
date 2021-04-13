@@ -3,6 +3,14 @@
   position: relative;
 
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .slider__control {
@@ -43,6 +51,10 @@
 
   &:active {
     opacity: 0.1;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -95,24 +107,8 @@
   &:last-child {
     margin-right: 0;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .slider__list {
-    margin-bottom: 39px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .slider__toggles {
+  @media (min-width: $desktop-width) {
     display: none;
-  }
-
-  .slider__control {
-    display: block;
-  }
-
-  .slider__list {
-    margin-bottom: 0;
   }
 }

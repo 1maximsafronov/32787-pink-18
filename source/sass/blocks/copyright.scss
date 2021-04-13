@@ -11,6 +11,10 @@
 
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .copyright__logo {
@@ -35,10 +39,4 @@
   height: 34px;
 
   fill: $pink-color;
-}
-
-@media (min-width: $desktop-width) {
-  .copyright__text {
-    font-size: 18px;
-  }
 }

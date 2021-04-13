@@ -20,6 +20,14 @@
   border-bottom: 1px solid rgba($black-color, 0.1);
 
   column-gap: 35px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    padding: 0;
+
+    border: none;
+  }
 }
 
 .editor__item {
@@ -33,6 +41,28 @@
 
       fill: $pink-color;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 17px;
+    padding-top: 9px;
+    padding-right: 18px;
+    padding-bottom: 24px;
+    padding-left: 5px;
+
+    border-bottom: 1px solid rgba($black-color, 0.1);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 0;
   }
 }
 
@@ -66,61 +96,8 @@
       height: 32px;
     }
   }
-}
 
-.editor__icon {
-  display: block;
-
-  opacity: 0.3;
-
-  fill: $primary-color;
-
-  &:hover,
-  &:focus {
-    opacity: 0.5;
-  }
-}
-
-.editor__range {
-  position: absolute;
-  right: 20px;
-  bottom: 34px;
-  left: 20px;
-
-  display: none;
-}
-
-
-@media (min-width: $tablet-width) {
-  .editor__list {
-    display: block;
-
-    padding: 0;
-
-    border: none;
-  }
-
-  .editor__item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    margin-bottom: 17px;
-    padding-top: 9px;
-    padding-right: 18px;
-    padding-bottom: 24px;
-    padding-left: 5px;
-
-    border-bottom: 1px solid rgba($black-color, 0.1);
-  }
-
-  .editor__icon {
-    opacity: 1;
-
-    fill: $pink-color;
-  }
-
-  .editor__button {
+  @media (min-width: $tablet-width) {
     &--crop {
       .editor__icon {
         width: 22px;
@@ -143,25 +120,7 @@
     }
   }
 
-  .editor__range {
-    position: static;
-
-    display: block;
-
-    width: 202px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .editor__item {
-    margin-bottom: 0;
-    padding-top: 15px;
-    padding-right: 30px;
-    padding-bottom: 15px;
-    padding-left: 0;
-  }
-
-  .editor__button {
+  @media (min-width: $desktop-width) {
     &--crop {
       .editor__icon {
         width: 44px;
@@ -183,8 +142,44 @@
       }
     }
   }
+}
 
-  .editor__range {
+.editor__icon {
+  display: block;
+
+  opacity: 0.3;
+
+  fill: $primary-color;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  @media (min-width: $tablet-width) {
+    opacity: 1;
+
+    fill: $pink-color;
+  }
+}
+
+.editor__range {
+  position: absolute;
+  right: 20px;
+  bottom: 34px;
+  left: 20px;
+
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+
+    display: block;
+
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 288px;
   }
 }

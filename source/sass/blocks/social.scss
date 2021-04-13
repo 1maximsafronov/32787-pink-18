@@ -13,6 +13,11 @@
   &:last-child {
     margin-right: 0;
   }
+
+
+  @media (min-width: $desktop-width) {
+    margin-right: 5px;
+  }
 }
 
 .social__link {
@@ -42,11 +47,4 @@
   margin: auto;
 
   fill: $pink-color;
-}
-
-
-@media (min-width: $desktop-width) {
-  .social__item {
-    margin-right: 5px;
-  }
 }
