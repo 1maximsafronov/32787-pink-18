@@ -1,4 +1,24 @@
 
+.feature__picture {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+
+    width: 300px;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.feature__image {
+  @media (min-width: $desktop-width) {
+    display: block;
+
+    width: 300px;
+  }
+}
+
 .feature__wrapper {
   @media (min-width: $desktop-width) {
     padding-right: 30px;
@@ -51,25 +71,5 @@
 
     font-size: 18px;
     line-height: 30px;
-  }
-}
-
-.feature__picture {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
-
-    width: 300px;
-    margin: 0;
-    margin-bottom: 50px;
-  }
-}
-
-.feature__image {
-  @media (min-width: $desktop-width) {
-    display: block;
-
-    width: 300px;
   }
 }
