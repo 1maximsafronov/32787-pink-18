@@ -13,6 +13,7 @@ const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const svgstore = require("gulp-svgstore");
 const uglify = require("gulp-uglify-es").default;
+const ghpages = require('gh-pages');
 
 const copy = () => {
   return gulp.src([
@@ -108,3 +109,9 @@ const watcher = () => {
 const build = gulp.series(clean, copy, styles, js, sprite, html);
 exports.build = build;
 exports.default = gulp.series(build, server, watcher);
+
+const publish = () => {
+  return ghpages.publish("./build", function (err) { });
+}
+
+exports.publish = publish;
