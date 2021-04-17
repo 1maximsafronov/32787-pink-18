@@ -1,0 +1,185 @@
+
+
+.editor__list {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  margin-bottom: 38px;
+  padding: 0;
+  padding-top: 42px;
+  padding-right: 20px;
+  padding-bottom: 75px;
+  padding-left: 20px;
+
+  list-style: none;
+
+  border-bottom: 1px solid rgba($black-color, 0.1);
+
+  column-gap: 35px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    padding: 0;
+
+    border: none;
+  }
+}
+
+.editor__item {
+  &--active {
+    .editor__range {
+      display: block;
+    }
+
+    .editor__icon {
+      opacity: 1;
+
+      fill: $pink-color;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 17px;
+    padding-top: 9px;
+    padding-right: 18px;
+    padding-bottom: 24px;
+    padding-left: 5px;
+
+    border-bottom: 1px solid rgba($black-color, 0.1);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 0;
+  }
+}
+
+.editor__button {
+  display: block;
+
+  padding: 0;
+
+  cursor: pointer;
+
+  border: none;
+  background: none;
+
+  &--crop {
+    .editor__icon {
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  &--fill {
+    .editor__icon {
+      width: 48px;
+      height: 43px;
+    }
+  }
+
+  &--contrast {
+    .editor__icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--crop {
+      .editor__icon {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    &--fill {
+      .editor__icon {
+        width: 24px;
+        height: 22px;
+      }
+    }
+
+    &--contrast {
+      .editor__icon {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--crop {
+      .editor__icon {
+        width: 44px;
+        height: 44px;
+      }
+    }
+
+    &--fill {
+      .editor__icon {
+        width: 48px;
+        height: 43px;
+      }
+    }
+
+    &--contrast {
+      .editor__icon {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
+
+.editor__icon {
+  display: block;
+
+  opacity: 0.3;
+
+  fill: $primary-color;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  @media (min-width: $tablet-width) {
+    opacity: 1;
+
+    fill: $pink-color;
+  }
+}
+
+.editor__range {
+  position: absolute;
+  right: 20px;
+  bottom: 34px;
+  left: 20px;
+
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+
+    display: block;
+
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+  }
+}

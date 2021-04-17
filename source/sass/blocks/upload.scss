@@ -1,0 +1,135 @@
+
+.upload__wrapper {
+  padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 58px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.upload__title {
+  margin: 0;
+  margin-bottom: 42px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  text-align: center;
+
+  color: $primary-color;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+    padding-right: 110px;
+    padding-left: 110px;
+
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
+}
+
+.upload__form {
+  margin: 0;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+
+  background-color: $secondery-bg-color;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-right: 60px;
+    padding-bottom: 57px;
+    padding-left: 80px;
+  }
+}
+
+.upload__editor {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+
+    width: 300px;
+    padding-left: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    margin-top: 40px;
+    padding: 0;
+  }
+}
+
+.upload__preview {
+  width: 280px;
+  height: 374px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 57px;
+  }
+}
+
+.upload__preview-image {
+  display: block;
+}
+
+.upload__buttons {
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+    padding-right: 13px;
+    padding-left: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0;
+  }
+}
+
+.upload__button {
+  display: block;
+
+  width: 100%;
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+    margin: 0;
+  }
+}

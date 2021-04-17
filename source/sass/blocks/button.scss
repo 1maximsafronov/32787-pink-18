@@ -1,0 +1,129 @@
+.button {
+  padding: 15px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+
+  color: $white-color;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+
+  &:disabled,
+  &--disabled {
+    cursor: not-allowed;
+  }
+
+  &--green {
+    padding-bottom: 17px;
+
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: 2px;
+    background-color: $green-color;
+
+    line-height: 30px;
+
+    &:hover,
+    &:focus {
+      background-color: $darker-green-color;
+    }
+
+    &:active {
+      color: rgba($white-color, 0.3);
+      background-color: $darker-green-color;
+    }
+
+    &:disabled,
+    &--disabled {
+      color: $white-color;
+      background-color: $light-gray-color;
+
+      &:hover,
+      &:focus {
+        color: $white-color;
+        background-color: $light-gray-color;
+      }
+
+      &:active {
+        color: $white-color;
+        background-color: $light-gray-color;
+      }
+    }
+  }
+
+  &--white {
+    display: block;
+
+    border: 3px solid $white-color;
+    border-radius: 29px;
+
+
+    &:hover,
+    &:focus {
+      color: $pink-color;
+      background-color: $white-color;
+    }
+
+    &:active {
+      color: rgba($pink-color, 0.3);
+      background-color: $white-color;
+    }
+  }
+
+  &--pink {
+    color: $pink-color;
+    border-width: 3px;
+    border-style: solid;
+    border-color: $pink-color;
+    border-radius: 30px;
+    background: none;
+
+
+    &:hover,
+    &:focus {
+      color: $white-color;
+      background-color: $pink-color;
+    }
+
+    &:active {
+      color: rgba($white-color, 0.3);
+    }
+  }
+
+  &--gray {
+    opacity: 0.1;
+    color: $primary-color;
+    border-width: 3px;
+    border-style: solid;
+    border-color: $primary-color;
+    border-radius: 30px;
+    background: none;
+
+
+    &:hover,
+    &:focus {
+      opacity: 0.3;
+    }
+
+    &:active {
+      opacity: 0.3;
+      color: $white-color;
+      background-color: $primary-color;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .button {
+    &--white {
+      font-size: 21px;
+    }
+  }
+}

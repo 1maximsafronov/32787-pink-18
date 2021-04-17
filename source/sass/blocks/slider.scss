@@ -1,0 +1,114 @@
+
+.slider__list {
+  position: relative;
+
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.slider__control {
+  position: absolute;
+  top: 30px;
+
+  display: none;
+
+  width: 22px;
+  height: 42px;
+  margin: 0;
+  padding: 0;
+
+  cursor: pointer;
+
+  opacity: 0.3;
+  border: none;
+  background: none;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  &--prev {
+    left: 0;
+
+    background-image: url("../img/icon-review-arrow-left.svg");
+  }
+
+  &--next {
+    right: 0;
+
+    background-image: url("../img/icon-review-arrow-right.svg");
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__toggle {
+  display: block;
+
+  width: 6px;
+  height: 6px;
+  margin: 0;
+  margin-right: 19px;
+  padding: 0;
+
+  cursor: pointer;
+
+  opacity: 0.3;
+  border: none;
+  border-radius: 50%;
+  background-color: $black-color;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &--active {
+    cursor: auto;
+
+    opacity: 1;
+    background-color: $white-color;
+    box-shadow: 0 0 0 3px $primary-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
+      background-color: $white-color;
+      box-shadow: 0 0 0 3px $primary-color;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

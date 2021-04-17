@@ -11,12 +11,14 @@ const include = require("posthtml-include");
 const sourcemap = require("gulp-sourcemaps");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
+const svgstore = require("gulp-svgstore");
+const uglify = require("gulp-uglify-es").default;
 
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
+    // "source/js/**",
     "source/*.ico"
   ], {
     base: "source"
@@ -38,7 +40,9 @@ const styles = () => {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(sass())
+    .pipe(sass({
+      includePaths: require("scss-resets").includePaths
+    }))
     .pipe(postcss([
       autoprefixer()
     ]))
@@ -51,6 +55,15 @@ const styles = () => {
 
 exports.styles = styles;
 
+const js = () => {
+  return gulp.src("source/js/script.js")
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"));
+}
+
+exports.js = js;
+
 const html = () => {
   return gulp.src("source/*.html")
     .pipe(posthtml([include()]))
@@ -59,6 +72,15 @@ const html = () => {
 }
 
 exports.html = html;
+
+const sprite = () => {
+  return gulp.src("source/img/{icon-,logo-}*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+}
 
 // Server
 
@@ -80,9 +102,9 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html").on("change", gulp.series("html", sync.reload));
 }
 
-const build = gulp.series(clean, copy, styles, html);
+const build = gulp.series(clean, copy, styles, js, sprite, html);
 exports.build = build;
 exports.default = gulp.series(build, server, watcher);

@@ -1,0 +1,165 @@
+.main-nav {
+  background-color: rgba($black-color, 0.3);
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba($black-color, 0.3);
+  }
+}
+
+.main-nav--no-js {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+.main-nav--closed {
+  .main-nav__wrapper {
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    border: none;
+    background: none;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 27px;
+      padding-bottom: 43px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      padding: 0;
+
+      border: none;
+      background: none;
+    }
+  }
+
+  .main-nav__toggle {
+    width: 50px;
+    height: 24px;
+  }
+
+
+  .main-nav__toggle-icon--cross {
+    display: none;
+  }
+
+  .main-nav__toggle-icon--burger {
+    display: block;
+  }
+
+  .main-nav__list {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba($black-color, 0.3);
+
+    .main-nav__wrapper {
+      background: none;
+    }
+
+    .main-nav__list {
+      display: flex;
+    }
+  }
+}
+
+
+.main-nav__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 23px;
+  padding-right: 20px;
+  padding-bottom: 23px;
+  padding-left: 20px;
+
+  border-bottom: 1px solid $black-color;
+  background-color: $primary-color;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-end;
+
+    padding-top: 27px;
+    padding-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    background: none;
+  }
+}
+
+.main-nav__toggle {
+  position: relative;
+
+  display: block;
+
+  width: 23px;
+  height: 23px;
+  margin: 0;
+  padding: 0;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 0;
+  background: none;
+
+
+  &:hover,
+  &:focus {
+    .main-nav__toggle-icon {
+      fill: $pink-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__toggle-icon {
+  fill: $white-color;
+
+  &--burger {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+
+  background-color: $primary-color;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 14px;
+
+    background: none;
+  }
+}
+
+.main-nav__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 27px;
+    padding-right: 10px;
+    padding-bottom: 43px;
+    padding-left: 10px;
+  }
+}

@@ -1,0 +1,136 @@
+.reviews {
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 72px;
+      left: 50%;
+
+      display: block;
+
+      width: 79px;
+      height: 63px;
+
+      content: "";
+      transform: translateX(-50%);
+
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
+  }
+}
+
+.reviews__wrapper {
+  padding-top: 41px;
+  padding-right: 20px;
+  padding-bottom: 41px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 184px;
+    padding-right: 10px;
+    padding-bottom: 35px;
+    padding-left: 10px;
+  }
+}
+
+.reviews__list {
+  @media (min-width: $desktop-width) {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+}
+
+.reviews__item {
+  display: none;
+  flex-direction: column;
+
+  margin: 0;
+
+  &--active {
+    display: flex;
+  }
+}
+
+
+.reviews__author {
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.reviews__author-name {
+  display: block;
+
+  margin: 0;
+
+  text-align: center;
+
+  color: $black-color;
+
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.reviews__author-info {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    margin: 0;
+
+    text-align: center;
+
+    color: $primary-color;
+
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.reviews__text {
+  margin: 0;
+
+  text-align: center;
+
+  color: $primary-color;
+
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+
+    margin-bottom: 35px;
+
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 36px;
+
+    font-size: 18px;
+  }
+}

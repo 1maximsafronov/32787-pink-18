@@ -1,0 +1,30 @@
+html {
+  overflow-x: hidden;
+
+  box-sizing: border-box;
+  min-width: 320px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+
+  min-width: 320px;
+
+  color: $primary-color;
+  background-color: $white-color;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+}
