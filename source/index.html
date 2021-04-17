@@ -17,10 +17,10 @@
     <include src="build/img/sprite.svg"></include>
   </div>
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--no-js">
       <div class="main-nav__container">
         <div class="main-nav__wrapper">
-          <a href="index.html" class="page-header__logo">
+          <a class="page-header__logo">
             <picture>
               <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 960px)">
               <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
@@ -28,10 +28,10 @@
             </picture>
           </a>
           <button class="main-nav__toggle" type="button">
-            <svg class="main-nav__toggle-icon main-nav__toggle-icon--cross" width="23px" height="23px">
+            <svg class="main-nav__toggle-icon main-nav__toggle-icon--cross" width="23" height="23">
               <use xlink:href="#icon-menu-cross"></use>
             </svg>
-            <svg class="main-nav__toggle-icon main-nav__toggle-icon--burger" width="50px" height="24px">
+            <svg class="main-nav__toggle-icon main-nav__toggle-icon--burger" width="50" height="24">
               <use xlink:href="#icon-menu-burger"></use>
             </svg>
             <span class="visually-hidden">Открыть меню</span>
@@ -48,31 +48,34 @@
             <a class="site-nav__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link" href="#">HTML Academy</a>
+            <a class="site-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </div>
     </nav>
     <section class="promo-app container">
-      <h1 class="visually-hiddent">Сайт приложения Pink</h1>
+      <h1 class="visually-hidden">Сайт приложения Pink</h1>
       <h2 class="visually-hidden">Представляем вам наше приложение</h2>
       <div class="promo-app__wrapper">
         <p class="promo-app__title page-title">Взгляните на жизнь иначе!</p>
         <div class="promo-app__download">
-          <a href="#" class="promo-app__download-button button button--white">Скачать приложение</a>
+          <a href="https://apps.apple.com" class="promo-app__download-button button button--white">Скачать
+            приложение</a>
           <ul class="promo-app__download-list">
             <li class="promo-app__download-item">
-              <a class="promo-app__download-link promo-app__download-link--ios" href="#">
+              <a class="promo-app__download-link promo-app__download-link--ios" href="https://apps.apple.com">
                 <span class="visually-hidden">App Store</span>
               </a>
             </li>
             <li class="promo-app__download-item">
-              <a class="promo-app__download-link promo-app__download-link--android" href="#">
+              <a class="promo-app__download-link promo-app__download-link--android"
+                href="https://play.google.com/store">
                 <span class="visually-hidden">Play market</span>
               </a>
             </li>
             <li class="promo-app__download-item">
-              <a class="promo-app__download-link promo-app__download-link--windows" href="#">
+              <a class="promo-app__download-link promo-app__download-link--windows"
+                href="https://www.microsoft.com/ru-RU/store/apps">
                 <span class="visually-hidden">Windows Store</span>
               </a>
             </li>
@@ -329,15 +332,15 @@
         </div>
       </div>
       <div class="contacts__map">
-        <!-- <iframe
+        <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003244!2d30.32085871626303!3d59.93871916905394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617642093783!5m2!1sru!2sru"
-          width="100%" height="100%" style="border: 0;" allowfullscreen="false" loading="lazy"></iframe> -->
+          width="100%" height="100%" style="border: 0;" allowfullscreen="false" loading="lazy"></iframe>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
-      <a href="index.html" class="page-footer__logo">
+      <a class="page-footer__logo">
         <picture>
           <source srcset="img/logo-pink-blue-desktop.svg" media="(min-width: 940px)">
           <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Логотип пинк">
@@ -374,15 +377,14 @@
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="copyright__image" width="26.943px" height="34.09px">
+          <svg class="copyright__image" width="27" height="34">
             <use xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
-  <!-- <script src="js/script.js"></script> -->
-  <script src="js/bundle.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
