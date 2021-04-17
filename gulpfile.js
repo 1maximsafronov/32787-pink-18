@@ -12,17 +12,14 @@ const sourcemap = require("gulp-sourcemaps");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const svgstore = require("gulp-svgstore");
-const webpack = require('webpack');
-const webpackStream = require('webpack-stream');
-const webpackConfig = require('./webpack.config.js');
+const uglify = require("gulp-uglify-es").default;
 
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     // "source/js/**",
-    "source/*.ico",
-    "source/css/**"
+    "source/*.ico"
   ], {
     base: "source"
   })
@@ -58,6 +55,15 @@ const styles = () => {
 
 exports.styles = styles;
 
+const js = () => {
+  return gulp.src("source/js/script.js")
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"));
+}
+
+exports.js = js;
+
 const html = () => {
   return gulp.src("source/*.html")
     .pipe(posthtml([include()]))
@@ -66,14 +72,6 @@ const html = () => {
 }
 
 exports.html = html;
-
-const js = () => {
-  return gulp.src('./source/js/index.js')
-    .pipe(webpackStream(webpackConfig), webpack)
-    .pipe(gulp.dest('./build/js'));
-}
-
-exports.js = js;
 
 const sprite = () => {
   return gulp.src("source/img/{icon-,logo-}*.svg")
@@ -105,9 +103,8 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", gulp.series("html", sync.reload));
-  gulp.watch("source/js/**/*.{js,jsx}", gulp.series("js", sync.reload));
 }
 
-const build = gulp.series(clean, copy, styles, sprite, html, js);
+const build = gulp.series(clean, copy, styles, js, sprite, html);
 exports.build = build;
 exports.default = gulp.series(build, server, watcher);
