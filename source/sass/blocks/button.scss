@@ -25,34 +25,34 @@
 
     border: none;
     border-radius: 2px;
-    background-color: #2aab6d;
+    background-color: $green-color;
 
     line-height: 30px;
 
     &:hover,
     &:focus {
-      background-color: #1c9b5e;
+      background-color: $darker-green-color;
     }
 
     &:active {
       color: rgba($white-color, 0.3);
-      background-color: #1c9b5e;
+      background-color: $darker-green-color;
     }
 
     &:disabled,
     &--disabled {
       color: $white-color;
-      background-color: #e5e5e5;
+      background-color: $light-gray-color;
 
       &:hover,
       &:focus {
         color: $white-color;
-        background-color: #e5e5e5;
+        background-color: $light-gray-color;
       }
 
       &:active {
         color: $white-color;
-        background-color: #e5e5e5;
+        background-color: $light-gray-color;
       }
     }
   }

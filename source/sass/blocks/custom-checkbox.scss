@@ -1,54 +1,29 @@
-.custom-radio {
+.custom-checkbox {
   color: $primary-color;
 
   font-size: 18px;
   line-height: 30px;
 
   label {
-    position: relative;
-
     display: flex;
     align-items: center;
-
-    padding-left: 70px;
 
     cursor: pointer;
 
     &::before {
-      position: absolute;
-      top: 50%;
-      left: 0;
-
       display: block;
 
-      width: 41px;
-      height: 41px;
+      width: 39px;
+      height: 39px;
+      margin-right: 20px;
 
       content: "";
-      transform: translateY(-50%);
 
-      border: 2px solid #e5e5e5;
-      border-radius: 50%;
+      border: 2px solid $light-gray-color;
+      border-radius: 2px;
       background-color: $white-color;
     }
 
-    &::after {
-      position: absolute;
-      top: 50%;
-      left: 13px;
-
-      display: none;
-
-      width: 15px;
-      height: 15px;
-
-      content: "";
-      transform: translateY(-50%);
-
-      border-radius: 50%;
-      background-color: $pink-color;
-    }
-
     &:hover,
     &:focus {
       &::before {
@@ -63,7 +38,7 @@
     }
   }
 
-  input[type="radio"] + label {
+  input[type="checkbox"] + label {
     &:hover,
     &:focus {
       &::before {
@@ -78,32 +53,31 @@
     }
   }
 
-  input[type="radio"]:checked + label {
-    position: relative;
-
-    &::after {
-      display: block;
+  input[type="checkbox"]:checked + label {
+    &::before {
+      background-image: url("../img/icon-yes-red.svg");
+      background-repeat: no-repeat;
+      background-position: 50%;
     }
   }
 }
 
-.radio-list {
+.checkbox-list {
   display: grid;
 
   padding: 0;
 
   list-style: none;
 
-  grid-row-gap: 45px;
+  grid-row-gap: 43px;
 }
 
-@media (min-width: $tablet-width) {
-  .custom-radio {
-    label {
-      padding-left: 60px;
 
+@media (min-width: $tablet-width) {
+  .custom-checkbox {
+    label {
       &::before {
-        margin-right: 22px;
+        margin-right: 21px;
       }
     }
   }
