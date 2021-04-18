@@ -158,13 +158,13 @@
 .contacts__map {
   height: 234px;
 
-  background-image: url("../img/bg-map-mobile@1x.png");
+  background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/bg-map-mobile@2x.png");
+    background-image: url("../img/bg-map-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
