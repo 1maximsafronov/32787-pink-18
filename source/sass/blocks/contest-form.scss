@@ -299,13 +299,14 @@
     }
 
     &--contacts {
-      display: flex;
+      display: grid;
       justify-content: space-between;
 
       width: 100%;
       padding-top: 28px;
       padding-bottom: 13px;
 
+      grid-template-columns: 1fr 1fr;
       column-gap: 70px;
 
       .contest-form__text-field {
