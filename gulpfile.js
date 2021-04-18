@@ -14,12 +14,19 @@ const sync = require("browser-sync").create();
 const svgstore = require("gulp-svgstore");
 const uglify = require("gulp-uglify-es").default;
 const ghpages = require('gh-pages');
+const webp = require("gulp-webp");
+const imagemin = require("gulp-imagemin");
+
+const clean = () => {
+  return del("build");
+}
+
+exports.clean = clean;
 
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    // "source/js/**",
+    // "source/img/**",
     "source/*.ico"
   ], {
     base: "source"
@@ -29,11 +36,27 @@ const copy = () => {
 
 exports.copy = copy;
 
-const clean = () => {
-  return del("build");
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{jpg,png}")
+    .pipe(webp({
+      quality: 90
+    }))
+    .pipe(gulp.dest("build/img"));
 }
 
-exports.clean = clean;
+exports.createWebp = createWebp;
+
+const images = () => {
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+    .pipe(imagemin([
+      imagemin.mozjpeg({ progressive: true }),
+      imagemin.optipng({ optimizationLevel: 3 }),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("build/img"));
+}
+
+exports.images = images;
 
 // Styles
 
@@ -106,12 +129,22 @@ const watcher = () => {
   gulp.watch("source/*.html").on("change", gulp.series("html", sync.reload));
 }
 
-const build = gulp.series(clean, copy, styles, js, sprite, html);
-exports.build = build;
-exports.default = gulp.series(build, server, watcher);
-
 const publish = () => {
   return ghpages.publish("./build", function (err) { });
 }
 
 exports.publish = publish;
+
+const build = gulp.series(
+  clean,
+  copy,
+  images,
+  createWebp,
+  styles,
+  js,
+  sprite,
+  html
+);
+
+exports.build = build;
+exports.default = gulp.series(build, server, watcher);
