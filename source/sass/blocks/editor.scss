@@ -19,8 +19,6 @@
 
   border-bottom: 1px solid rgba($black-color, 0.1);
 
-  column-gap: 35px;
-
   @media (min-width: $tablet-width) {
     display: block;
 
@@ -31,6 +29,12 @@
 }
 
 .editor__item {
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
   &--active {
     .editor__range {
       display: block;
@@ -48,6 +52,7 @@
     align-items: center;
     justify-content: space-between;
 
+    margin: 0;
     margin-bottom: 17px;
     padding-top: 9px;
     padding-right: 18px;

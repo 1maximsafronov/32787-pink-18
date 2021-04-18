@@ -98,12 +98,16 @@
             <li class="features__item feature">
               <p class="feature__picture">
                 <picture>
+                  <source type="image/webp"
+                    srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x"
+                    media="(min-width: 960px)">
+                  <source type="image/webp"
+                    srcset="img/iphone-screen-1-tablet@1x.webp 1x, img/iphone-screen-1-tablet@2x.webp 2x">
+
                   <source srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x"
                     media="(min-width: 960px)">
-                  <source srcset="img/iphone-screen-1-tablet@1x.png 1x, img/iphone-screen-1-tablet@2x.png 2x"
-                    media="(min-width: 660px)">
-                  <img class="feature__image" src="img/iphone-screen-1-mobile@1x.png"
-                    srcset="img/iphone-screen-1-mobile@2x.png 2x" alt="">
+                  <img class="feature__image" src="img/iphone-screen-1-tablet@1x.png"
+                    srcset="img/iphone-screen-1-tablet@2x.png 2x" alt="">
                 </picture>
               </p>
               <div class="feature__wrapper">
@@ -116,12 +120,16 @@
             <li class="features__item feature">
               <p class="feature__picture">
                 <picture>
+                  <source type="image/webp"
+                    srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x"
+                    media="(min-width: 960px)">
+                  <source type="image/webp"
+                    srcset="img/iphone-screen-2-tablet@1x.webp 1x, img/iphone-screen-2-tablet@2x.webp 2x">
+
                   <source srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x"
                     media="(min-width: 960px)">
-                  <source srcset="img/iphone-screen-2-tablet@1x.png 1x, img/iphone-screen-2-tablet@2x.png 2x"
-                    media="(min-width: 660px)">
-                  <img class="feature__image" src="img/iphone-screen-2-mobile@1x.png"
-                    srcset="img/iphone-screen-2-mobile@2x.png 2x" alt="">
+                  <img class="feature__image" src="img/iphone-screen-2-tablet@1x.png"
+                    srcset="img/iphone-screen-2-tablet@2x.png 2x" alt="">
                 </picture>
               </p>
               <div class="feature__wrapper">
@@ -134,12 +142,16 @@
             <li class="features__item feature">
               <p class="feature__picture">
                 <picture>
+                  <source type="image/webp"
+                    srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x"
+                    media="(min-width: 960px)">
+                  <source type="image/webp"
+                    srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+
                   <source srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x"
                     media="(min-width: 960px)">
-                  <source srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x"
-                    media="(min-width: 660px)">
-                  <img class="feature__image" src="img/iphone-screen-3-mobile@1x.png"
-                    srcset="img/iphone-screen-3-mobile@2x.png 2x" alt="">
+                  <img class="feature__image" src="img/iphone-screen-3-tablet@1x.png"
+                    srcset="img/iphone-screen-3-tablet@2x.png 2x" alt="">
                 </picture>
               </p>
               <div class="feature__wrapper">
@@ -150,7 +162,14 @@
             </li>
           </ul>
           <p class="features__preview">
-            <img class="features__preview-image" src="img/iphone-screen-mobile@1x.png" alt="">
+            <picture>
+              <source type="image/webp"
+                srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
+
+              <img class="features__preview-image" src="img/iphone-screen-mobile@1x.png"
+                srcset="img/iphone-screen-mobile@2x.png 2x" alt="">
+            </picture>
+
           </p>
         </div>
       </div>
